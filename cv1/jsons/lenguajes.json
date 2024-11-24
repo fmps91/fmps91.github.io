@@ -1,0 +1,59 @@
+[
+    {
+        "es": {
+            "left": {
+                "perfil de carrera": {
+                    "nombre": "",
+                    "descripción": ""
+                },
+                "experiencias": [
+                    {
+                        "nombre": "",
+                        "descripción": "",
+                        "duración": ""
+                    }
+                ],
+                "projectos": {
+                    "descripción": "",
+                    "lista": [
+                        {
+                            "nombre": "",
+                            "descripción": ""
+                        }
+                    ]
+                }
+            },
+            "rigth": {
+
+            }
+        }
+    },
+    {
+        "en": {
+            "left":{
+            "career profile": {
+                "description": ""
+            },
+            "experiences": [
+                {
+                    "name": "",
+                    "description": "",
+                    "duration": ""
+                }
+            ],
+            "projects": {
+                "description": "",
+                "list": [
+                    {
+                        "name": "",
+                        "description": ""
+                    }
+                ]
+            }
+            },
+            "rigth": {
+
+            }
+        }
+    }
+]
