@@ -1,0 +1,47 @@
+
+.marginSocial{
+  margin-bottom: 5px;
+}
+
+  .default{
+    margin-bottom: 1em;
+  }
+  
+  .content{
+    display: flex;
+    align-items: center;
+    margin-left: 8%;
+  }
+  
+  .content >img{
+    width: "20px";
+    margin-right: "10px";
+  }
+
+  
+  #leftHtml > div>div>img{
+    width: 8em;
+    border-radius: 100%;
+  }
+  
+  .items{
+    margin-left: 8%;
+    text-align: left;
+    margin-right: 20%;
+  }
+
+  .pTitle{
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .pText{
+    font-size: 14px;
+  }
+
+  #curriculun{
+    cursor: pointer;
+  }
+  
+ 
+  

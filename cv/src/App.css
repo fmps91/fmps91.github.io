@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -40,3 +40,125 @@
 .read-the-docs {
   color: #888;
 }
+ */
+
+ /* *{
+  margin: 0;
+  padding: 0;
+  
+  
+}
+
+body{
+  background: #e6e8e3;
+}
+
+
+
+
+#container {
+  display: flex;
+  justify-content: center;
+
+}
+
+
+#container > div#leftHtml{
+  background: #65727a;
+  text-align: center;
+  width: 15em;
+  text-decoration: none;
+}
+
+
+
+#container > div#leftHtml>#perfil>p{
+  font-size: 20px;
+}
+
+#leftHtml > div>img{
+  width: 8em;
+  border-radius: 100%;
+ 
+
+}
+
+#container > div#leftHtml>div#perfil{
+  margin-bottom: 15em;
+}
+
+#redes{
+  margin-left: 10%;
+  text-align: left;
+  
+}
+
+a{
+  text-decoration: none;
+  color: black;
+ 
+}
+
+h2 {
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+}
+
+h5 {
+  color: black;
+  font-size: 12px;
+}
+h6 {
+  font-weight: normal;
+  color: black;
+  font-size: 10px;
+}
+
+
+#container > div#rigthHtml{
+  background: #ffff;
+}
+
+@media (max-width: 1250px) {
+
+}
+ */
+ 
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #e6e8e3;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+
+}
+
+#leftHtml{
+ /*  background: rgb(59, 65, 69); */
+  background: #566573;
+  text-align: center;
+  color: #ffff;
+  /* width: 15em; */
+  width: 240px;
+  /* 240 pixeles width */
+ /*  width: es 1em (16px) */
+  text-decoration: none;
+}
+
+#rigthHtml{
+  background:#ffff;
+  width: 785px;
+  /* 785 pixeles width transformado a em es 49 */
+}
+
+
+
+

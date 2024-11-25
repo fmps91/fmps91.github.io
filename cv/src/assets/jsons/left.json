@@ -1,0 +1,39 @@
+{
+   
+    "perfil": {
+        "foto": "../../src/assets/images/photo.jpeg",
+        "nombre": "Miguel Parra",
+        "rol": "Full Stack Developer"
+    },
+    "redes":{
+        "correo":"fmps92@gmail.com",
+        "github":"https://github.com/fmps91",
+        "linkeding":"https://www.linkedin.com/in/miguel-sarmiento-0755b5202/"
+    },
+    "educación": [
+        {
+           
+            "titulo": "Magister en Devops (Desarrollo de Operaciones)",
+            "instituto": "Universidad Internacional de la Rioja",
+            "duración": "2022 – 2023"
+        }
+        ,
+        {
+           
+            "titulo": "Ingeniero en Sistemas Informaticos y Computación",
+            "instituto": "Universidad Tecnica Particular de Loja",
+            "duración": "2010 – 2022"
+        }
+    
+    ],
+    "idiomas": [
+        "Ingles (Basico)",
+        "Español (Nativo)"
+    ],
+    "intereses": [
+        "Escuchar musica",
+        "Arte digital",
+        "Lectura"
+    ]
+    
+}

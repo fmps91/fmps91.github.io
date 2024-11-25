@@ -1,48 +1,19 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+/* import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg' */
 
 import './App.css'
+import LeftPanel from './components/LeftPanel';
+import RigthPanel from './components/RigthPanel';
+import leftJson from './assets/jsons/left.json';
+import rigthJson from './assets/jsons/rigth.json';
+
 
 function App() {
   const [count, setCount] = useState(0)
 
-  /*
-  //codigo para guardar como imagen 
-  const handleSubmit = async (e) => {
-    
-    e.preventDefault();
-    //console.log(formData);
 
-
-    html2canvas(document.body).then(async function (canvas) {
-      // Convertir la imagen capturada a un formato adecuado para PDF
-
-      const imgData = await canvas.toDataURL('image/png');
-      const byteString = atob(imgData.split(',')[1]); // Eliminar el encabezado "data:image/png;base64,"
-      const arrayBuffer = new ArrayBuffer(byteString.length);
-      const uint8Array = new Uint8Array(arrayBuffer);
-
-      for (let i = 0; i < byteString.length; i++) {
-        uint8Array[i] = byteString.charCodeAt(i);
-      }
-
-      const blob = new Blob([uint8Array], { type: 'image/png' });
-
-      // Crear un enlace para descargar el archivo
-      const link = document.createElement('a');
-      link.href = URL.createObjectURL(blob); // Crear una URL temporal para el Blob
-      link.download = 'filename.png'; // Nombre del archivo a descargar
-      link.click();
-
-      console.log('Imagen descargada correctamente');
-
-
-    });
-
-  }; */
-
-  const handleSubmit = async (e) => {
+  /* const handleSubmit = (e) => {
     e.preventDefault();
     html2canvas(document.body).then(function (canvas) {
       
@@ -81,21 +52,28 @@ function App() {
     
       // Descargar el PDF generado
       pdf.save('captura.pdf');
-    });
+    }); 
+    };
+    */
     
 
-  };
+  
   return (
-    <>
+    <div id="container">
+        
+        <div id='left'>
+        <LeftPanel data={leftJson}></LeftPanel>
+        
+        </div>
 
-      <div>
-        <h1>Ejemplo</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, commodi sint dolorem asperiores corporis dolores. Ipsum repudiandae officiis odio mollitia perferendis illo accusantium vel. Deleniti impedit ipsam repellat perspiciatis est.
-        </p>
-        <button id="c" onClick={handleSubmit}>click</button>
-      </div>
+        <div id='rigth'>
+        <RigthPanel data={rigthJson}></RigthPanel>
+        </div>
+        
+        
+        {/* <button  onClick={handleSubmit}>click</button> */}
 
-    </>
+    </div>
   )
 }
 

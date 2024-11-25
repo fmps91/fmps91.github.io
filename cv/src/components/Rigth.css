@@ -1,0 +1,51 @@
+
+  .defaultCareerProfile{
+    margin-bottom: 1em;
+  }
+  
+  .pTitle{
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .pCompany{
+    color: #1a5276;
+    font-size: 14px;
+  }
+
+  .pText{
+    font-size: 14px;
+  }
+  
+  .titulo{
+    display:flex;
+    margin-bottom: 1em;
+    align-items: center;
+    
+  }
+
+  .redondSvg{
+    background-color: rgb(162, 169, 174);
+  }
+
+  .section{
+    padding-top: 1em;
+    margin-left: 7%;
+    margin-right: 10%;;
+  }
+  
+  #tecCarrera{
+    display:ruby;
+    margin-right: 30%;
+  }
+
+  .tecP{
+    background:#d7dbdd;
+    margin-top: 10px;
+    margin-right: 5px;
+    height: 20px;
+  }
+
+
+ 
+  
