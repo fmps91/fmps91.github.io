@@ -62,15 +62,18 @@ body{
   
   display: block;
   text-align: center;
-
+  color: #ffff;
   
   font-weight: bold;
 
 }
 
+
+
 #footer > div >a{
+  font-size: 20px;
   text-decoration: none;
-  color: black;
+  color: #ffff;
 }
 
 
@@ -98,6 +101,13 @@ body{
     width: auto;
   }
 
+  #cv > div> a{
+    font-size: 20px;
+  }
+  
+  #cv > div> p{
+    font-size: 20px;
+  }
 
    
 }

@@ -8,19 +8,29 @@ imagen de representacion de la app:
 ## Comandos
 * npm run dev: para ejecutar la aplicación
 * npm run build: para construir la aplicación
-hay algunos errores producidos por la version de vite
-deben poner exactamente asi en el index.html: 
+
 ```
+en este comando se encarga de construir la app y copiar directorios images y librarys el comando es para mac tenerlo en cuenta en el package.json:
+
+"build": "vite build && cp -R src/assets/images ../page && cp -R src/assets/librarys ../page",
+
+```
+hay algunos errores producidos por la version de vite
+```
+deben poner exactamente asi en el index.html: 
 <script type="module" crossorigin src="assets/index-BAU9OtcN.js"></script>
     
 <link rel="stylesheet" crossorigin href="assets/index-DcAij2k-.css">
 
-una parte más abajo deben copiar las librerías la carpeta src/assets/librarys en cv/assets y luego poner estas líneas:
+una parte más abajo deben descomentar las lineas para las librerias desde el parrafo para desarrollo:
 
-<script src="../assets/librarys/html2canvas/html2canvas.min.js"></script>
+<script src="src/assets/librarys/html2canvas/html2canvas.min.js"></script>
+<script src="src/assets/librarys/jsPDF/jspdf.umd.min.js"></script> 
 
-<script src="../assets/librarys/jsPDF/jspdf.umd.min.js"></script>
+una parte más abajo deben descomentar las lineas para las librerias desde el parrafo para producción:
 
-luego ejecutan algun servidor de html para correr la aplicación
+<script src="librarys/html2canvas/html2canvas.min.js"></script>
+<script src="librarys/jsPDF/jspdf.umd.min.js"></script>
+
 ```
 

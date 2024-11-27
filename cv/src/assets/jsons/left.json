@@ -1,7 +1,7 @@
 {
    
     "perfil": {
-        "foto": "../../src/assets/images/photo.jpeg",
+        "foto": "photo.jpeg",
         "nombre": "Miguel Parra",
         "rol": "Full Stack Developer"
     },
@@ -20,7 +20,7 @@
         ,
         {
            
-            "titulo": "Ingeniero en Sistemas Informaticos y Computación",
+            "titulo": "Ingeniero en Sistemas Informáticos y Computación",
             "instituto": "Universidad Técnica Particular de Loja",
             "duración": "2010 – 2022"
         }

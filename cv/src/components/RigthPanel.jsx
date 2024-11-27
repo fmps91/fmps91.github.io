@@ -4,13 +4,18 @@ import "./Rigth.css"
 import ProgressBar from '../hooks/ProgressBar';
 
 export default function RigthPanel({ data }) {
-    console.log("data rigth: ", Object.keys(data))
-    console.log("data rigth: ", data)
-    const pathImages = "../../src/assets/images/";
+    /* console.log("data rigth: ", Object.keys(data))
+    console.log("data rigth: ", data) */
+    
+    let pathImages = "images/";
+    
+    process.env.NODE_ENV === "production" ? pathImages="images/" : pathImages="../../src/assets/images/"
+    
     const iconsSvg = ['user.png', 'experiences.png', 'projects.png', 'skills.png', 'courses.png']
     const stileIcon = { width: "20px", margin: "10px", paddingBottom: "1em" }
     const divIcon = { width: "40px", height: "40px", borderRadius: "100%", marginRight: "10px" }
     const stileA = { textDecoration: "none", color: "black" }
+
     return (
         <div id='rigthHtml'>
             <div id='carrera' className='section'>
@@ -62,9 +67,7 @@ export default function RigthPanel({ data }) {
                     :
                     <div id='divCarreras'>
                         {data.experiencias.map((v, e, a) => {
-                            console.log("v: ", v)
                             const styleExp = a.length > 1 ? { marginBottom: "1em" } : { marginBottom: "0px" }
-
                             return (
                                 <div key={e} style={styleExp}>
                                     <div id='headerExp'>
@@ -210,13 +213,11 @@ export default function RigthPanel({ data }) {
                     :
                     <div className=''>
                         {data.cursos.map((v, e) => {
-                            console.log(" v:")
                             return (
-                                <div key={e} className='textDefaultRitgh' style={{marginTop:"20px"}}>
+                                <div key={e} id="curso" className='textDefaultRitgh' style={{marginTop:"20px"}}>
 
                                     <p className='pText'>{v.titulo}</p>
-
-                                    <img src={`${pathImages + v.dir}`} style={{ width: "400px", marginTop: "7px" }} >
+                                    <img src={`${pathImages + v.dir}`} className='imgCourse' >
                                     </img>
 
                                 </div>

@@ -2,12 +2,12 @@ import './left.css'
 
 export default function LeftPanel({ data }) {
     
-    console.log("data left: ", data)
-    const pathImages = "../../src/assets/images/";
+    
+    
+    let pathImages = "images/";
+    process.env.NODE_ENV === "production" ? pathImages="images/" : pathImages="../../src/assets/images/"
     const iconsSvg = ['correo.png', 'github.png', 'linkedin.png']
-    //console.log("imagen: ", pathImages + iconsSvg[0])
-
-    /* let photo="/images/photo.jpeg" */
+  
   
     const handleClick = (e) => {
 
@@ -63,7 +63,7 @@ export default function LeftPanel({ data }) {
                     <h2>No hay perfil disponible</h2>
                     :
                     <div id='datosPerfil'>
-                        <img id="photo" src={data.perfil.foto} className='default'/>
+                        <img src={`${pathImages +data.perfil.foto}`} className='default'/>
                         <h1 > {data.perfil.nombre} </h1>
                         <p className='pText ' style={{ marginTop: "10px" }}>{data.perfil.rol}</p>
                     </div>
@@ -95,7 +95,9 @@ export default function LeftPanel({ data }) {
                         <div className='content marginSocial'>
                             <img src={`${pathImages + iconsSvg[2]}`}  >
                             </img>
-                            <a href={data.redes.linkeding}  >linkedin.com/in/miguel...</a>
+                           
+                            <a href={data.redes.linkeding}  >linkedin.com/in/miguel...</a>      
+                            
                         </div >
                     </div >
 
@@ -126,10 +128,7 @@ export default function LeftPanel({ data }) {
                             )
                         })
                         }
-
-
-
-
+                        
                     </div>
                 }
 
@@ -175,7 +174,7 @@ export default function LeftPanel({ data }) {
             <div id="cv" className='default items' style={{ paddingBottom: "1em" }}>
                 <p className='pTitle'>DESCARGAS</p>
                 <div>
-                <a className='pText' href='../../src/assets/images/cv_es.pdf' download>CV/Curriculun PDF</a>
+                <a className='pText' href={`${pathImages}cv_es.pdf`} download>CV/Curriculun PDF</a>
                 </div>
                 <div>
                     <p className='pText' onClick={handleClick} >CV/Curriculun generando PDF por React</p>
