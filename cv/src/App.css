@@ -44,10 +44,42 @@ body{
   
 }
 
+
+#idfooter{
+  margin: auto;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 18px;
+  background: #566573;
+  width: 1024px;
+
+}
+
+#footer{
+  
+  display: block;
+  text-align: center;
+
+  
+  font-weight: bold;
+
+}
+
+#footer > div >a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
 @media (max-width: 1024px) {
- /*  #container{
-    display: block;
-  } */
+
+  #idfooter{
+    width: auto;
+  }
   #rigthHtml{
     width: auto;
   }
