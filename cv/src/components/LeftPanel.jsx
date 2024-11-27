@@ -2,12 +2,12 @@ import './left.css'
 
 export default function LeftPanel({ data }) {
     
-    console.log("data left: ", data)
-    const pathImages = "../../src/assets/images/";
+    
+    
+    let pathImages = "images/";
+    process.env.NODE_ENV === "production" ? pathImages="images/" : pathImages="../../src/assets/images/"
     const iconsSvg = ['correo.png', 'github.png', 'linkedin.png']
-    //console.log("imagen: ", pathImages + iconsSvg[0])
-
-    /* let photo="/images/photo.jpeg" */
+  
   
     const handleClick = (e) => {
 
@@ -63,7 +63,7 @@ export default function LeftPanel({ data }) {
                     <h2>No hay perfil disponible</h2>
                     :
                     <div id='datosPerfil'>
-                        <img id="photo" src={data.perfil.foto} className='default'/>
+                        <img id="photo" src={`${pathImages +data.perfil.foto}`} className='default'/>
                         <h1 > {data.perfil.nombre} </h1>
                         <p className='pText ' style={{ marginTop: "10px" }}>{data.perfil.rol}</p>
                     </div>

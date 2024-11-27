@@ -4,9 +4,12 @@ import "./Rigth.css"
 import ProgressBar from '../hooks/ProgressBar';
 
 export default function RigthPanel({ data }) {
-    console.log("data rigth: ", Object.keys(data))
-    console.log("data rigth: ", data)
-    const pathImages = "../../src/assets/images/";
+    /* console.log("data rigth: ", Object.keys(data))
+    console.log("data rigth: ", data) */
+    
+    let pathImages = "images/";
+    process.env.NODE_ENV === "production" ? pathImages="images/" : pathImages="../../src/assets/images/"
+    
     const iconsSvg = ['user.png', 'experiences.png', 'projects.png', 'skills.png', 'courses.png']
     const stileIcon = { width: "20px", margin: "10px", paddingBottom: "1em" }
     const divIcon = { width: "40px", height: "40px", borderRadius: "100%", marginRight: "10px" }
