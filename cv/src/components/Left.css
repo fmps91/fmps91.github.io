@@ -1,47 +1,141 @@
-
-.marginSocial{
+.marginSocial {
   margin-bottom: 5px;
 }
 
-  .default{
-    margin-bottom: 1em;
-  }
+.default {
+  margin-bottom: 1em;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  margin-left: 8%;
+}
+
+.content>img {
+  width: "20px";
+  margin-right: "10px";
+}
+
+#leftHtml>div>div>img {
+  margin-top: 1em;
+  width: 8em;
+  border-radius: 100%;
+}
+
+.items {
+  margin-left: 8%;
+  text-align: left;
+  margin-right: 20%;
+}
+
+.pTitle {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.pText {
+  font-size: 14px;
+}
+
+#redes > div >.marginSocial > img{
+  width: 20px; 
+  margin-right: 10px;
+}
+
+#redes > div >.marginSocial > a{
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+}
+
+
+#cv > div:nth-child(2) > a
+{
+  text-decoration: none;
+  color: #ffff;
+}
+
+#cv > div:nth-child(3) > p {
+  cursor: pointer;
+}
+
+#cv > div:nth-child(2), #cv > div:nth-child(3){
+  margin-top: 5px;
+}
+
+
+@media (max-width: 829px) {
   
-  .content{
-    display: flex;
-    align-items: center;
-    margin-left: 8%;
+  #leftHtml>div>div>img {
+    width: 480px;
   }
-  
-  .content >img{
-    width: "20px";
-    margin-right: "10px";
+  h1{
+    font-size: 90px;
   }
 
-  
-  #leftHtml > div>div>img{
-    width: 8em;
-    border-radius: 100%;
-  }
-  
-  .items{
-    margin-left: 8%;
-    text-align: left;
-    margin-right: 20%;
+  #datosPerfil > p{
+    font-size: 30px;
   }
 
-  .pTitle{
-    font-size: 14px;
-    font-weight: bold;
+  #redes > div >.marginSocial > a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
   }
 
-  .pText{
-    font-size: 14px;
+  #redes > div >.marginSocial > img{
+    width: 80px; 
+    margin-right: 20px;
   }
 
-  #curriculun{
-    cursor: pointer;
+  #educacion > p{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  #educacion > div > .default > div:nth-child(1) > p{
+    font-size: 25px;
   }
   
- 
+  #educacion > div > .default > div:nth-child(2) > p{
+    font-size: 20px;
+  }
   
+  #educacion > div > .default > div:nth-child(3) > p{
+    font-size: 20px;
+  }
+
+  #lenguajes >p{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+#lenguajes > div > .pText{
+  font-size: 20px;
+}
+
+  #intereses > p{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  #intereses > div > .pText{
+    font-size: 20px;
+  }
+
+  #cv > p{
+    font-size: 30px;
+  }
+  
+}
+
+@media (max-width: 587px) {
+
+  #leftHtml>div>div>img {
+    width: 280px;
+  }
+  h1{
+    font-size: 45px;
+  }
+}

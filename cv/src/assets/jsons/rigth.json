@@ -1,29 +1,30 @@
 {
     "carrera": {
         "descripción": "Desarrollador Fullstack con experiencia en la creación de aplicaciones web y servidores desde el frontend hasta el backend. Enfocado en construir soluciones escalables, optimizadas y de alto rendimiento. Comprometido con el trabajo en equipo, la calidad del código y la mejora continua.",
-        "tecnologías":["react.js","jest","cypress","k6","express","mongoose","postgresql","mongodb","python","javascript","slack","trello","ansible","docker","kubernetes","github","githubactions","EC2","Amazon Api Gateway","AWS Lambda","DinamoDB","S3","ionic"]
+        "tecnologías":["React.js","Jest","Cypress","K6","Express","Mongoose","Postgresql","Mongodb","Python","Javascript","Slack","Trello","Ansible","Docker","Kubernetes","Terraform","Github","Githubactions","EC2","Amazon Api Gateway","AWS Lambda","DinamoDB","S3","Ionic"]
     },
 
     "experiencias": [
         {
             "rol": "Devops, Developer, QA",
-            "nombre": "Saluto",
+            "nombre": "Saluto C.L.",
             "descripción": "Desarrollo de un Marco de Desarrollo Agíl CI/CD para la empresa Saluto C.L.",
+            "herramientas":["Express","Postgresql","Github","Githubactions","Slack","Trello","Ansible","EC2"],
             "actividades": ["Construcción de continuos integration para despliegue de aplicaciones de entornos productivos","Construcción de continuos deployment para despliegue","Desarrollo de pruebas para los workflows para pruebas de ejecución de código"],
             "duración": "Febrero del 2023 – Agosto del 2023",
             "beneficios": [
-                "mejoras de procesos y monitoreo en un 53.3%",
-                "velocidad de entrega del software en 60%",
-                "satisfación de la metodología en 66.7%"
+                "Mejoras de procesos y monitoreo en un 53.3%",
+                "Velocidad de entrega del software en 60%",
+                "Satisfación de la metodología en 66.7%"
             ]
             
         }
     ],
     "projectos": {
-        "descripción": "Algunos proyectos que realice en mi tiempo libre",
+        "descripción": "Algunos proyectos que realice en mi tiempo libre:",
         "lista": [
             {
-                "nombre": "twitterClone",
+                "nombre": "Twitter Clone",
                 "descripción": "es un clone de twitter con herramientas: react.js, express, cloudinary, jest, cypress, k6",
                 "link":"https://github.com/fmps91/twitterclone"
                 
@@ -32,7 +33,7 @@
     },
     "habilidades":[{
         "nombre":"Developer",
-        "porcentaje":95
+        "porcentaje":90
     },
     {
         "nombre":"UX",
@@ -40,26 +41,30 @@
     },
     {
         "nombre":"Arquitecturas en microservicios",
-        "porcentaje":95
+        "porcentaje":93
     },
     {
-        "nombre":"Actualización en las herramientas",
-        "porcentaje":86
+        "nombre":"Actualización y migración en las herramientas",
+        "porcentaje":80
     },
     {
         "nombre":"Procesos automatizados",
-        "porcentaje":95
+        "porcentaje":90
     }
 
     ],
     "cursos":[
         {
-            "titulo":"Certificado de Aws de la unir",
-            "dir":"file1"
+            "titulo":"Certificado de curso de preparación de AWS Cloud Practitioner de la Unir",
+            "dir":"aws.png"
         },
         {
-            "titulo":"Certificado de Microsoft de la unir",
-            "dir":"file2"
+            "titulo":"Certificado de curso de preparación de AZ900 Microsoft Azure Fundamentals de la Unir",
+            "dir":"azure.png"
+        },
+        {
+            "titulo":"CertiProf Scrum Foundation",
+            "dir":"scrum.png"
         }
     ]
 

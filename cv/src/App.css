@@ -1,129 +1,9 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
- */
-
- /* *{
-  margin: 0;
-  padding: 0;
-  
-  
-}
-
-body{
-  background: #e6e8e3;
-}
 
 
+/* @media (max-width: 1250px) {
 
+} */
 
-#container {
-  display: flex;
-  justify-content: center;
-
-}
-
-
-#container > div#leftHtml{
-  background: #65727a;
-  text-align: center;
-  width: 15em;
-  text-decoration: none;
-}
-
-
-
-#container > div#leftHtml>#perfil>p{
-  font-size: 20px;
-}
-
-#leftHtml > div>img{
-  width: 8em;
-  border-radius: 100%;
- 
-
-}
-
-#container > div#leftHtml>div#perfil{
-  margin-bottom: 15em;
-}
-
-#redes{
-  margin-left: 10%;
-  text-align: left;
-  
-}
-
-a{
-  text-decoration: none;
-  color: black;
- 
-}
-
-h2 {
-  font-weight: bold;
-  color: black;
-  font-size: 18px;
-}
-
-h5 {
-  color: black;
-  font-size: 12px;
-}
-h6 {
-  font-weight: normal;
-  color: black;
-  font-size: 10px;
-}
-
-
-#container > div#rigthHtml{
-  background: #ffff;
-}
-
-@media (max-width: 1250px) {
-
-}
- */
  
 *{
   margin: 0;
@@ -138,26 +18,61 @@ body{
   display: flex;
   justify-content: center;
   /* align-items: center; */
+  
+}
 
+#left{
+  background: #566573;
 }
 
 #leftHtml{
- /*  background: rgb(59, 65, 69); */
-  background: #566573;
   text-align: center;
   color: #ffff;
-  /* width: 15em; */
   width: 240px;
-  /* 240 pixeles width */
- /*  width: es 1em (16px) */
   text-decoration: none;
+  
+  
+}
+
+#rigth{
+  background:#ffff;
 }
 
 #rigthHtml{
-  background:#ffff;
+
   width: 785px;
-  /* 785 pixeles width transformado a em es 49 */
+  
 }
+
+@media (max-width: 1024px) {
+ /*  #container{
+    display: block;
+  } */
+  #rigthHtml{
+    width: auto;
+  }
+}
+
+@media (max-width: 829px) {
+   #container{
+     display: block;
+   }
+   #left{ 
+    display: flex;
+    justify-content: center;
+    
+  }
+  #leftHtml{
+    width: auto;
+  }
+
+
+   
+}
+
+
+
+
 
 
 

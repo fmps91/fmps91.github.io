@@ -1,23 +1,22 @@
 import React from 'react'
 
 import "./Rigth.css"
-
-//import progressbar from "../hooks/ProgressBar";
+import ProgressBar from '../hooks/ProgressBar';
 
 export default function RigthPanel({ data }) {
     console.log("data rigth: ", Object.keys(data))
     console.log("data rigth: ", data)
     const pathImages = "../../src/assets/images/";
-    const iconsSvg = ['user.svg', 'experiences.svg', 'projects.svg', 'skills.svg', 'courses.svg']
+    const iconsSvg = ['user.png', 'experiences.png', 'projects.png', 'skills.png', 'courses.png']
     const stileIcon = { width: "20px", margin: "10px", paddingBottom: "1em" }
     const divIcon = { width: "40px", height: "40px", borderRadius: "100%", marginRight: "10px" }
-    //style={{marginBottom:""}}
+    const stileA = { textDecoration: "none", color: "black" }
     return (
         <div id='rigthHtml'>
             <div id='carrera' className='section'>
                 <div className='titulo'>
                     <div className='redondSvg' style={divIcon}>
-                        <img src={`${pathImages + iconsSvg[0]}`} style={stileIcon} >
+                        <img src={`${pathImages + iconsSvg[0]}`} style={{ width: "20px", marginLeft: "10px", marginTop: "7px" }} >
                         </img>
                     </div>
 
@@ -59,33 +58,67 @@ export default function RigthPanel({ data }) {
 
                 </div>
                 {data.experiencias == null ?
-                    <h2>No hay tecnologías</h2>
+                    <h2>No hay experiencias</h2>
                     :
                     <div id='divCarreras'>
-                        {data.experiencias.map((v, e) => {
+                        {data.experiencias.map((v, e, a) => {
                             console.log("v: ", v)
+                            const styleExp = a.length > 1 ? { marginBottom: "1em" } : { marginBottom: "0px" }
+
                             return (
-                                <div key={e}>
-                                    <p className='pText'>{v.rol}</p>
-                                    <p className='pCompany'>{v.nombre}</p>
-                                    <p className='pText'>{v.descripción}</p>
-                                    <p className='pText'>{v.duración}</p>
-                                    <div id='actividades'>
+                                <div key={e} style={styleExp}>
+                                    <div id='headerExp'>
+                                        <div className='itemExp'>
+                                            <p className='pText'>{v.rol}</p>
+                                            <p className='pCompany'>{v.nombre}</p>
 
-                                        {v.actividades.map((v1, e1) => {
-                                            return (
-                                                <p key={e1} className='pText'>{v1}</p>
-                                            )
-                                        })}
-                                    </div>
-                                    <div id='beneficios'>
+                                        </div>
+                                        <div >
+                                            <p className='pTitle'>{v.duración}</p>
+                                        </div>
 
-                                        {v.beneficios.map((v1, e1) => {
-                                            return (
-                                                <p key={e1} className='pText'>{v1}</p>
-                                            )
-                                        })}
                                     </div>
+
+
+                                    <p className='pText defaultRigth'>{v.descripción}</p>
+
+
+                                    <div id='containerActBen'>
+
+                                        <div id='tecnologias'>
+                                            <p className='pText default'>{Object.keys(v)[3].toLocaleUpperCase()}</p>
+                                            <div className='lista'>
+                                                {v.herramientas.map((v1, e1) => {
+                                                    return (
+                                                        <p key={e1} className='pText'>{v1}</p>
+                                                    )
+                                                })}
+                                            </div>
+                                        </div>
+
+                                        <div id='actividades'>
+                                            <p className='pText default'>{Object.keys(v)[4].toLocaleUpperCase()}</p>
+                                            <ul className='lista'>
+                                                {v.actividades.map((v1, e1) => {
+                                                    return (
+                                                        <li key={e1} className='pText itemLista'>{v1}</li>
+                                                    )
+                                                })}
+                                            </ul>
+                                        </div>
+                                        <div id='beneficios'>
+                                            <p className='pText default'>{Object.keys(v)[6].toLocaleUpperCase()}</p>
+                                            <ul className='lista'>
+                                                {v.beneficios.map((v1, e1) => {
+                                                    return (
+                                                        <li key={e1} className='pText itemLista'>{v1}</li>
+                                                    )
+                                                })}
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
 
 
                                 </div>
@@ -99,66 +132,72 @@ export default function RigthPanel({ data }) {
             </div>
 
 
-            <div id='habilidades' className='section'>
+            <div id='projectos' className='section'>
                 <div className='titulo'>
                     <div className='redondSvg' style={divIcon}>
-                        <img src={`${pathImages + iconsSvg[1]}`} style={stileIcon} >
+                        <img src={`${pathImages + iconsSvg[2]}`} style={stileIcon} >
                         </img>
                     </div>
 
                     <p className='pTitle '>{Object.keys(data)[2].toUpperCase()}</p>
 
                 </div>
-
-                {data.habilidades == null ?
-                    <h2>No hay habilidades</h2>
+                <p className='pText ' style={{marginBottom:"5px"}}>{data.projectos.descripción}</p>
+                {data.projectos.lista == null ?
+                    <h2>No hay projectos</h2>
                     :
-                    <div id='tecCarrera'>
-                        {data.habilidades.map((v, e) => {
+                    <div className='wrapper'>
+                        {data.projectos.lista.map((v, e) => {
                             return (
-                                <p key={e} className='tecP pText'>{v.nombre+"  value: "+v.porcentaje}</p>
-
+                                <div className='card' key={e}>
+                                    <p className='pCompany textDefaultRitgh'>{v.nombre}</p>
+                                    <p className='pText'>{v.descripción}</p>
+                                    <a href={v.link} style={stileA} className="pCompany" >link</a>
+                                </div>
                             );
                         })
                         }
                     </div>
                 }
-                
+
             </div>
 
 
-            <div id='projectos' className='section'>
+            <div id='habilidadess' className='section'>
                 <div className='titulo'>
                     <div className='redondSvg' style={divIcon}>
-                        <img src={`${pathImages + iconsSvg[1]}`} style={stileIcon} >
+                        <img src={`${pathImages + iconsSvg[3]}`} style={stileIcon} >
                         </img>
                     </div>
 
                     <p className='pTitle '>{Object.keys(data)[3].toUpperCase()}</p>
 
                 </div>
-
-                {data.projectos.lista == null ?
-                    <h2>No hay projectos</h2>
+                {data.habilidades == null ?
+                    <h2>No hay habilidades</h2>
                     :
-                    <div id='tecCarrera'>
-                        {data.projectos.lista.map((v, e) => {
+                    <div  >
+                        {data.habilidades.map((v, e) => {
                             return (
-                                <p key={e} className='pText'>{v.nombre+"  descripción: "+v.descripción+"  link: "+v.link}</p>
+                                <div key={e} className='habFlex'>
+                                    <p className='pText il'>{v.nombre}</p>
+                                    <ProgressBar value={v.porcentaje} max={100} />
+
+                                </div>
 
                             );
                         })
                         }
                     </div>
                 }
-                
+
             </div>
 
 
-            <div id='cursos' className='section'>
+            <div id='cursos' className='section' style={{ paddingBottom: "1em" }}>
                 <div className='titulo'>
                     <div className='redondSvg' style={divIcon}>
-                        <img src={`${pathImages + iconsSvg[1]}`} style={stileIcon} >
+                        <img src={`${pathImages + iconsSvg[4]}`} style={{ width: "20px", marginLeft: "9px", marginTop: "6px" }} >
                         </img>
                     </div>
 
@@ -169,17 +208,25 @@ export default function RigthPanel({ data }) {
                 {data.cursos == null ?
                     <h2>No hay cursos</h2>
                     :
-                    <div id='tecCarrera'>
+                    <div className=''>
                         {data.cursos.map((v, e) => {
+                            console.log(" v:")
                             return (
-                                <p key={e} className='pText'>{v.titulo+"  file: "+v.dir}</p>
+                                <div key={e} className='textDefaultRitgh' style={{marginTop:"20px"}}>
+
+                                    <p className='pText'>{v.titulo}</p>
+
+                                    <img src={`${pathImages + v.dir}`} style={{ width: "400px", marginTop: "7px" }} >
+                                    </img>
+
+                                </div>
 
                             );
                         })
                         }
                     </div>
                 }
-                
+
             </div>
 
 

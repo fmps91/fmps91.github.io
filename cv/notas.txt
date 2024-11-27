@@ -1,2 +1,62 @@
 colores
 https://htmlcolorcodes.com/es/tabla-de-colores/
+
+
+Licencia GNU Licencia Pública General Menor v2.1
+
+como desahecer la modificación 
+git checkout -- file
+
+cuando se hace git add .
+git reset HEAD file
+
+
+como obtener los commits en una linea
+git log --oneline
+git log --oneline | cat
+
+#tutorial 6
+como desahecer el commit
+git reset commit
+ejemplo
+b48cd9f Elimina contenido
+git reset b48cd9f 
+git reset --hard b48cd9f 
+
+#tutorial 7
+es para ver los cambios de un commit con otro
+git diff commit1 commit2
+
+significar HEAD~1 commit antes que HEAD que es el ultimo
+git diff HEAD~1 HEAD
+
+como desahecer el commit
+es mejor hacerlo con revert
+porque permite que si hay cambios nuevos de tus compañeros no va a ver conflictos cuando agregen cosas
+git revert HEAD
+
+cuando queres tener los cambios aun sin enviar y sin tener commit
+git revert --no-commit HEAD
+
+tutorial 11
+git log --oneline --decoraye --all --graph
+como hacer el merge
+git merge rama
+
+tutorial 12
+como resolver un conflicto con el merger los cambios en un archivo en una seccion o una linea
+ejemplo en una linea
+<<<<<< HEAD
+    Esto esto el ultimo commit
+==============
+>>>>>>  Rama-new
+    Este es el commit que se quiere integrar
+
+tutorial 14
+git merge --abort
+
+tutorial 15
+commit tag
+git tag  alias commit
+ejemplo
+git tag v1.0.0 b48cd9f
