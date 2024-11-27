@@ -1,3 +1,5 @@
+esto es un Readme.md
+
 # Indice
 Recurso estatico para realizar un cv sin dependecias instaladas en el package.json
 
