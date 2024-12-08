@@ -25,8 +25,14 @@
         "lista": [
             {
                 "nombre": "Twitter Clone",
-                "descripción": "es un clone de twitter con herramientas: react.js, express, cloudinary, jest, cypress, k6",
+                "descripción": "Es un clone de twitter con herramientas: react.js, express, cloudinary, jest, cypress, k6.",
                 "link":"https://github.com/fmps91/twitterclone"
+                
+            },
+            {
+                "nombre": "CV page",
+                "descripción": "Es la creación de un curriculun en un repositorio de github herramientas: react.js, vite, githubpages, githubactions.",
+                "link":"https://github.com/fmps91/fmps91.github.io"
                 
             }
         ]
@@ -36,7 +42,7 @@
         "porcentaje":90
     },
     {
-        "nombre":"UX",
+        "nombre":"UX y UI",
         "porcentaje":82
     },
     {

@@ -32,7 +32,6 @@
   padding-top: 1em;
   margin-left: 7%;
   margin-right: 10%;
-  ;
 }
 
 #tecCarrera {
@@ -107,8 +106,6 @@
   border: 2px solid #999;
   border-radius: 5px;
   width: 250px;
-
-
 }
 
 .card>p.pCompany {
@@ -133,6 +130,12 @@
 
 }
 
+.imgCourse{
+  width: 400px;
+}
+
+
+
 @media (max-width: 590px) {
   .card {
     margin-top: 2%;
@@ -146,5 +149,39 @@
     grid-template-columns: repeat(1, 260px);
 
   }
+}
+
+@media (max-width: 410px) {
+  #containerActBen{
+    display:block;
+    margin-left: 30%;
+  }
+
+
+
+  #tecnologias{
+    margin-bottom: 1em;
+  }
+
+  #actividades{
+    margin-bottom: 1em;
+  }
+ 
+}
+
+@media (max-width: 436px) {
+  .section {
+    margin-left: 4%;
+  }
+
+  #projectos > div.wrapper > div{
+    width: 300px;
+  }
+  
+  #curso > img{
+    width: 300px;
+
+  }
+ 
 }
 

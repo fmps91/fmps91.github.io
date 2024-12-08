@@ -1,5 +1,3 @@
-esto es un Readme.md
-
 # Indice
 Recurso estatico para realizar un cv sin dependecias instaladas en el package.json
 
@@ -17,7 +15,6 @@ en este comando se encarga de contruir la app y copiar directorios images y libr
 "build": "vite build && cp -R src/assets/images ../page && cp -R src/assets/librarys ../page",
 
 ```
-
 hay algunos errores producidos por la version de vite
 ```
 deben poner exactamente asi en el index.html: 

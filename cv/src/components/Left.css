@@ -139,3 +139,34 @@
     font-size: 45px;
   }
 }
+
+@media (max-width: 436px) {
+
+
+  #redes > div > div:nth-child(1) > img{
+    height: 40px;
+    width: 40px;
+  }
+
+  #redes > div > div:nth-child(2) > img{
+    height: 40px;
+    width: 40px;
+  }
+
+  #redes > div > div:nth-child(3) > img{
+    height: 40px;
+    width: 40px;
+  }
+  .items {
+    margin-left: 5%;
+    text-align: left;
+    margin-right: 20%;
+  }
+
+  .content {
+    margin-left: 5%;
+  }
+
+
+  
+}
