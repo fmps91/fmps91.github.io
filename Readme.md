@@ -12,7 +12,7 @@ imagen de representacion de la app:
 ```
 en este comando se encarga de construir la app y copiar directorios images y librarys el comando es para mac tenerlo en cuenta en el package.json:
 
-"build": "vite build && cp -R src/assets/images ../page && cp -R src/assets/librarys ../page",
+"build": "vite build && cp -R src/assets/images .. && cp -R src/assets/librarys ..",
 
 ```
 hay algunos errores producidos por la version de vite
