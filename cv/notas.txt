@@ -9,6 +9,8 @@ https://htmlcolorcodes.com/es/tabla-de-colores/
 page para convertir tu pagina en pdf
 https://www.sejda.com/html-to-pdf
 
+comprimir pdf 
+https://www.ilovepdf.com/es/comprimir_pdf
 
 Licencia GNU Licencia Pública General Menor v2.1
 
