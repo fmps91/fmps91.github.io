@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp -R src/assets/images .. && cp -R src/assets/librarys ..",
+    "build": "vite build && cp -R src/assets/images ../page && cp -R src/assets/librarys ../page",
     "lint": "eslint .",
     "preview": "vite preview"
   },
