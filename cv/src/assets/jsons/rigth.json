@@ -1,7 +1,7 @@
 {
     "carrera": {
         "descripción": "Desarrollador Fullstack con experiencia en la creación de aplicaciones web y servidores desde el frontend hasta el backend. Enfocado en construir soluciones escalables, optimizadas y de alto rendimiento. Comprometido con el trabajo en equipo, la calidad del código y la mejora continua.",
-        "tecnologías":["React.js","Jest","Cypress","K6","Express","Mongoose","Postgresql","Mongodb","Python","Javascript","Slack","Trello","Ansible","Docker","Kubernetes","Terraform","Github","Githubactions","EC2","Amazon Api Gateway","AWS Lambda","DinamoDB","S3","Ionic"]
+        "tecnologías":["React.js","Jest","Cypress","K6","Express","Mongoose","Postgresql","Mongodb","Python","Javascript","Slack","Trello","Ansible","Docker","Kubernetes","Terraform","Github","Githubactions","EC2","Amazon Api Gateway","AWS Lambda","DinamoDB","S3"]
     },
 
     "experiencias": [
@@ -13,9 +13,9 @@
             "actividades": ["Construcción de continuos integration para despliegue de aplicaciones de entornos productivos","Construcción de continuos deployment para despliegue","Desarrollo de pruebas para los workflows para pruebas de ejecución de código"],
             "duración": "Febrero del 2023 – Agosto del 2023",
             "beneficios": [
-                "Mejoras de procesos y monitoreo en un 53.3%",
-                "Velocidad de entrega del software en 60%",
-                "Satisfación de la metodología en 66.7%"
+                "Mejoras de procesos y monitoreo",
+                "Velocidad de entrega del software",
+                "Satisfación de la metodología"
             ]
             
         }
@@ -30,11 +30,17 @@
                 
             },
             {
+                "nombre":"Netflix Clone",
+                "descripción":"Es un clon de netlix con herramientas: react, express, firebase, cypress, themoviedb",
+                "link": "https://github.com/fmps91/netflix_clone"
+            },
+            {
                 "nombre": "CV page",
                 "descripción": "Es la creación de un curriculun en un repositorio de github herramientas: react.js, vite, githubpages, githubactions.",
                 "link":"https://github.com/fmps91/fmps91.github.io"
                 
             }
+            
         ]
     },
     "habilidades":[{

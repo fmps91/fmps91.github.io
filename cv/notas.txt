@@ -1,3 +1,8 @@
+
+
+repositorio
+https://github.com/fmps91/fmps91.github.io
+
 colores
 https://htmlcolorcodes.com/es/tabla-de-colores/
 
@@ -6,6 +11,25 @@ https://www.sejda.com/html-to-pdf
 
 
 Licencia GNU Licencia Pública General Menor v2.1
+
+#git
+
+
+Estos serían los prefijos para hacer los commits:
+
+feat: Una nueva característica para el usuario.
+fix: Arregla un bug que afecta al usuario.
+perf: Cambios que mejoran el rendimiento del sitio.
+build: Cambios en el sistema de build, tareas de despliegue o instalación.
+ci: Cambios en la integración continua.
+docs: Cambios en la documentación.
+refactor: Refactorización del código como cambios de nombre de variables o funciones.
+style: Cambios de formato, tabulaciones, espacios o puntos y coma, etc; no afectan al usuario.
+test: Añade tests o refactoriza uno existente.
+
+para agregar los cambios un luego generar el commit
+git add .
+git commit o git commit -m "mensaje"
 
 como desahecer la modificación 
 git checkout -- file
@@ -54,6 +78,24 @@ ejemplo en una linea
 ==============
 >>>>>>  Rama-new
     Este es el commit que se quiere integrar
+
+tutorial 13 
+alias o atajos
+git lod = log --oneline --decorate
+para configurar se tiene que hacer esta linea de ejemplo
+git config --global alias.lod 'log --oneline --decorate'
+
+git config --global alias.lodag 'log --oneline --decorate --all --graph'
+
+para ver todos los alias es 
+git config --global --get-regexp alias
+
+para eliminar el alias
+git config --global --unset alias.lodag
+
+otra opcion es abriendo el archivo ~/.gitconfig y poner el alias 
+open ~/.gitconfig
+
 
 tutorial 14
 git merge --abort
@@ -135,3 +177,12 @@ pick 62b7d99 Delete file.txt
 squash 86f6584 Create static.yml
 squash 3dd0fb7 resolve feacture of the margins
 squash 0bb4cca feacture update margins
+
+luego te pide que te quedes con un comentario para el commit y borras todo 
+luego pones el mensaje por ejemplo
+"este es el mensaje del commit" nada mas y guardas
+
+
+#este es mejor opcion que el liveserver
+npm install -g http-server
+http-server dist/frontend/browser
