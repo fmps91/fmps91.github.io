@@ -1,11 +1,24 @@
 {
     "carrera": {
         "descripción": "Desarrollador Fullstack con experiencia en la creación de aplicaciones web y servidores desde el frontend hasta el backend. Enfocado en construir soluciones escalables, optimizadas y de alto rendimiento. Comprometido con el trabajo en equipo, la calidad del código y la mejora continua.",
-        "tecnologías":["React.js","Jest","Cypress","K6","Express","Mongoose","Postgresql","Mongodb","Python","Javascript","Slack","Trello","Ansible","Docker","Kubernetes","Terraform","Github","Githubactions","EC2","Amazon Api Gateway","AWS Lambda","DinamoDB","S3"]
+        "tecnologías":["React.js","Jest","Cypress","K6","Express","Mongoose","Postgresql","Mongodb","Python","Javascript","Slack","Trello","Ansible","Docker","Kubernetes","Terraform","Github","Githubactions","EC2","Amazon Api Gateway","AWS Lambda","DinamoDB","S3","Ionic"]
     },
 
     "experiencias": [
-        
+        {
+            "rol": "Devops, Developer, QA",
+            "nombre": "Saluto C.L.",
+            "descripción": "Desarrollo de un Marco de Desarrollo Agíl CI/CD para la empresa Saluto C.L.",
+            "herramientas":["Express","Postgresql","Github","Githubactions","Slack","Trello","Ansible","EC2"],
+            "actividades": ["Construcción de continuos integration para despliegue de aplicaciones de entornos productivos","Construcción de continuos deployment para despliegue","Desarrollo de pruebas para los workflows para pruebas de ejecución de código"],
+            "duración": "Febrero del 2023 – Agosto del 2023",
+            "beneficios": [
+                "Mejoras de procesos y monitoreo en un 53.3%",
+                "Velocidad de entrega del software en 60%",
+                "Satisfación de la metodología en 66.7%"
+            ]
+            
+        }
     ],
     "projectos": {
         "descripción": "Algunos proyectos que realice en mi tiempo libre:",
@@ -27,7 +40,6 @@
                 "link":"https://github.com/fmps91/fmps91.github.io"
                 
             }
-            
         ]
     },
     "habilidades":[{
@@ -53,7 +65,18 @@
 
     ],
     "cursos":[
-        
+        {
+            "titulo":"Certificado de curso de preparación de AWS Cloud Practitioner de la Unir",
+            "dir":"aws.png"
+        },
+        {
+            "titulo":"Certificado de curso de preparación de AZ900 Microsoft Azure Fundamentals de la Unir",
+            "dir":"azure.png"
+        },
+        {
+            "titulo":"CertiProf Scrum Foundation",
+            "dir":"scrum.png"
+        }
     ]
 
 }

@@ -1,4 +1,9 @@
+windsurf
+para abrir el chat de windsurf
+comand + l 
 
+actualizar vite
+npm update vite
 
 repositorio
 https://github.com/fmps91/fmps91.github.io
@@ -187,4 +192,4 @@ luego pones el mensaje por ejemplo
 
 #este es mejor opcion que el liveserver
 npm install -g http-server
-http-server dist/frontend/browser
+http-server page
