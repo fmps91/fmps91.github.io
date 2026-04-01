@@ -6,9 +6,8 @@ imagen de representacion de la app:
 ![ScreenShot](cv.png)
 
 ## Comandos
-* npm run dev: para ejecutar la aplicación
-* npm run build: para construir la aplicación
-
+* npm run dev: para ejecutar la aplicación en modo desarrollo
+* npm run build: para construir la aplicación en modo producción
 
 
 ### Desarrollo
@@ -31,7 +30,7 @@ se agregen al index.html para que funcione la app en desarrollo
 ```
 "build": "vite build && cp -R src/assets/images page && cp -R src/assets/librarys page && NODE_ENV=production node scriptLines && mv -f page/* ..",
 
-en este comando se encarga de construir la aplicacion, copiar las imagenes y librerias, setear la variable de entorno de produccion, ejecutar la app y ejecutar un script para agregar las lineas 
+en este comando se encarga de construir la aplicación, copiar las imagenes y librerias, setear la variable de entorno de produccion, ejecutar la app y ejecutar un script para agregar las lineas 
 const prod = [
   '<!-- para producción poner estas direcciónes de las librerias -->',
   '<script src="librarys/html2canvas/html2canvas.min.js"></script>',
