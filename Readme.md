@@ -9,28 +9,34 @@ imagen de representacion de la app:
 * npm run dev: para ejecutar la aplicación
 * npm run build: para construir la aplicación
 
+
+
+### Desarrollo
+
 ```
-en este comando se encarga de construir la app y copiar directorios images y librarys el comando es para mac tenerlo en cuenta en el package.json:
+"dev": " NODE_ENV=development node scriptLines && vite",
 
-"build": "vite build && cp -R src/assets/images .. && cp -R src/assets/librarys ..",
+en este comando se encarga de ejecutar la app y ejecutar un script para que las lineas 
+const dev = [
+  '<!-- para desarrollo poner estas direcciónes de las librerias -->',
+  '<script src="/src/assets/librarys/html2canvas/html2canvas.min.js"></script>',
+  '<script src="/src/assets/librarys/jsPDF/jspdf.umd.min.js"></script>'
+];
+se agregen al index.html para que funcione la app en desarrollo
 
 ```
-hay algunos errores producidos por la version de vite
+
+### Producción
+
 ```
-deben poner exactamente asi en el index.html: 
-<script type="module" crossorigin src="assets/index-BAU9OtcN.js"></script>
-    
-<link rel="stylesheet" crossorigin href="assets/index-DcAij2k-.css">
+"build": "vite build && cp -R src/assets/images page && cp -R src/assets/librarys page && NODE_ENV=production node scriptLines && mv -f page/* ..",
 
-una parte más abajo deben descomentar las lineas para las librerias desde el parrafo para desarrollo:
-
-<script src="src/assets/librarys/html2canvas/html2canvas.min.js"></script>
-<script src="src/assets/librarys/jsPDF/jspdf.umd.min.js"></script> 
-
-una parte más abajo deben descomentar las lineas para las librerias desde el parrafo para producción:
-
-<script src="librarys/html2canvas/html2canvas.min.js"></script>
-<script src="librarys/jsPDF/jspdf.umd.min.js"></script>
-
+en este comando se encarga de construir la aplicacion, copiar las imagenes y librerias, setear la variable de entorno de produccion, ejecutar la app y ejecutar un script para agregar las lineas 
+const prod = [
+  '<!-- para producción poner estas direcciónes de las librerias -->',
+  '<script src="librarys/html2canvas/html2canvas.min.js"></script>',
+  '<script src="librarys/jsPDF/jspdf.umd.min.js"></script>'
+];
+se agregen al index.html para que funcione la app en producción
 ```
 

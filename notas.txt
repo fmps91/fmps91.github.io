@@ -193,3 +193,7 @@ luego pones el mensaje por ejemplo
 #este es mejor opcion que el liveserver
 npm install -g http-server
 http-server page
+
+readme--------
+permite visualizar el readme
+control + shift + v
