@@ -21,7 +21,7 @@ if (process.env.NODE_ENV === 'development') {
   shouldAddDev = true;
   htmlPath = 'index.html';
 } else if (process.env.NODE_ENV === 'production') {
-  htmlPath = '../page/index.html';
+  htmlPath = 'page/index.html';
   shouldAddProd = true;
 }
 
