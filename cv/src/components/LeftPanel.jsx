@@ -7,9 +7,10 @@ export default function LeftPanel({ data }) {
     let pathImages = "images/";
     process.env.NODE_ENV === "production" ? pathImages="images/" : pathImages="../../src/assets/images/"
     const iconsSvg = ['correo.png', 'github.png', 'linkedin.png']
+    
+
   
-  
-    const handleClick = (e) => {
+    /* const handleClick = (e) => {
 
         e.preventDefault();
 
@@ -51,7 +52,7 @@ export default function LeftPanel({ data }) {
             // Descargar el PDF generado
             pdf.save('captura.pdf');
         });
-    };
+    }; */
    
     
     return (
@@ -177,7 +178,7 @@ export default function LeftPanel({ data }) {
                 <a className='pText' href={`${pathImages}cv_es.pdf`} download>CV/Curriculun PDF</a>
                 </div>
                 <div>
-                    <p className='pText' onClick={handleClick} >CV/Curriculun generando PDF por React</p>
+                    {/* <p className='pText' onClick={handleClick} >CV/Curriculun generando PDF por React</p> */}
                 </div>
                 
             </div>

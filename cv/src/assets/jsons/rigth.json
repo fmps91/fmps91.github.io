@@ -39,6 +39,12 @@
                 "descripción": "Es la creación de un curriculun en un repositorio de github herramientas: react.js, vite, githubpages, githubactions.",
                 "link":"https://github.com/fmps91/fmps91.github.io"
                 
+            },
+            {
+                "nombre": "Ecommerce_nests_react",
+                "descripción": "Es la creación de un ecommerce con nestjs y react",
+                "link":"https://github.com/fmps91/ecommerce_nests_react"
+                
             }
         ]
     },
