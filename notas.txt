@@ -192,7 +192,28 @@ luego pones el mensaje por ejemplo
 
 #este es mejor opcion que el liveserver
 npm install -g http-server
+
+#esto es para ejecutar el servidor en la carpeta page
 http-server page
+
+#esto es para ejecutar el servidor en la carpeta actual
+http-server .
+
+# Iniciar el servidor y abre el navegador por defecto
+http-server . -o -c-1
+
+# Iniciar y abrir con Firefox específicamente
+http-server . -o -c-1 -b firefox
+
+# Iniciar servidor en background y abrir Firefox
+http-server . -p 8081 -c-1 & open -a firefox http://localhost:8081
+
+Parámetros útiles:
+-o: Abre automáticamente el navegador
+-p 8080: Especifica el puerto (default: 8080)
+-c-1: Deshabilita el caché
+-b firefox: Especifica el navegador Firefox
+-S: Habilita CORS
 
 readme--------
 permite visualizar el readme

@@ -1,14 +1,11 @@
 {
-  "name": "cv1",
+  "name": "cv",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "dev2": " NODE_ENV=development node scriptLines && vite",
-    "build2": "vite build && cp -R src/assets/images page && cp -R src/assets/librarys page && NODE_ENV=production node scriptLines && mv -f page/* ..",
-    "build1": "vite build && cp -R src/assets/images page && mv -f page/* ..",
-    "build": "vite build && cp -R src/assets/images page ",
+    "dev": " NODE_ENV=development node scriptLines && vite",
+    "build": "vite build && cp -R src/assets/images page && cp -R src/assets/librarys page && NODE_ENV=production node scriptLines && mv -fv page/* ..",
     "lint": "eslint .",
     "preview": "vite preview"
   },
