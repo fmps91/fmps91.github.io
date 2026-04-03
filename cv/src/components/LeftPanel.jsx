@@ -1,16 +1,14 @@
 import './left.css'
-
+//import jsPDF from '../assets/librarys/jsPDF/jspdf.umd.min.js';
 export default function LeftPanel({ data }) {
     
-    
-    
+      
     let pathImages = "images/";
     process.env.NODE_ENV === "production" ? pathImages="images/" : pathImages="../../src/assets/images/"
     const iconsSvg = ['correo.png', 'github.png', 'linkedin.png']
     
 
-  
-    /* const handleClick = (e) => {
+    const handleClick = (e) => {
 
         e.preventDefault();
 
@@ -50,9 +48,9 @@ export default function LeftPanel({ data }) {
             pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
 
             // Descargar el PDF generado
-            pdf.save('captura.pdf');
+            pdf.save('cv.pdf');
         });
-    }; */
+    };
    
     
     return (
@@ -178,7 +176,7 @@ export default function LeftPanel({ data }) {
                 <a className='pText' href={`${pathImages}cv_es.pdf`} download>CV/Curriculun PDF</a>
                 </div>
                 <div>
-                    {/* <p className='pText' onClick={handleClick} >CV/Curriculun generando PDF por React</p> */}
+                    <p className='pText' onClick={handleClick} >CV/Curriculun generando PDF por React</p>
                 </div>
                 
             </div>

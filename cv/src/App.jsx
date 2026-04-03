@@ -34,7 +34,6 @@ function App() {
           </div>
           <div>
             <a href="https://github.com/fmps91">github: github.com/fmps91</a>
-
           </div>
         </div>
 

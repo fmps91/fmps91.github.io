@@ -1,4 +1,3 @@
-import React from 'react'
 
 import "./Rigth.css"
 import ProgressBar from '../hooks/ProgressBar';
@@ -42,13 +41,11 @@ export default function RigthPanel({ data }) {
 
                                 <p key={e} className='tecP pText'>{v}</p>
 
-
                             );
                         })
                         }
                     </div>
                 }
-
 
             </div>
 

@@ -189,6 +189,132 @@ luego te pide que te quedes con un comentario para el commit y borras todo
 luego pones el mensaje por ejemplo
 "este es el mensaje del commit" nada mas y guardas
 
+-------------------------------
+# si te sigue dando problemas el jspdf.umd.min.js
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cv1</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+<!-- para desarrollo poner estas direcciónes de las librerias -->
+<script src="/src/assets/librarys/html2canvas/html2canvas.min.js"></script>
+<script src="/src/assets/librarys/jsPDF/jspdf.umd.min.js"></script>
+</body>
+</html>
+
+
+const handleClick = (e) => {
+
+        e.preventDefault();
+
+        html2canvas(document.body).then(function (canvas) {
+
+            // Convertir la imagen capturada a formato Base64
+            const imgData = canvas.toDataURL('image/png'); // Imagen en formato Base64
+
+            const { jsPDF } = window.jspdf;
+            // Crear un documento PDF con jsPDF
+            const pdf = new jsPDF();
+
+            // Obtener las dimensiones del PDF
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            // Obtener las dimensiones del canvas
+            const canvasWidth = canvas.width;
+            const canvasHeight = canvas.height;
+
+            // Calcular el tamaño de la imagen para ajustarse al PDF
+            const imgAspectRatio = canvasWidth / canvasHeight;
+            const pdfAspectRatio = pdfWidth / pdfHeight;
+
+            let imgWidth, imgHeight;
+            if (imgAspectRatio > pdfAspectRatio) {
+                // Imagen es más ancha que la proporción del PDF
+                imgWidth = pdfWidth;
+                imgHeight = pdfWidth / imgAspectRatio;
+            } else {
+                // Imagen es más alta o igual en proporción al PDF
+                imgHeight = pdfHeight;
+                imgWidth = pdfHeight * imgAspectRatio;
+            }
+
+            // Agregar la imagen al PDF
+            pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
+
+            // Descargar el PDF generado
+            pdf.save('cv.pdf');
+        });
+    };
+
+1:54:40 AM [vite] (client) Failed to load source map for /Users/f/proyects/react/fmps91.github.io/cv/src/assets/librarys/jsPDF/jspdf.umd.min.js.
+Error: An error occurred while trying to read the map file at jspdf.umd.min.js.map
+Error: ENOENT: no such file or directory, open '/Users/f/proyects/react/fmps91.github.io/cv/src/assets/librarys/jsPDF/jspdf.umd.min.js.map'
+    at Object.readFileSync (node:fs:439:20)
+    at file:///Users/f/proyects/react/fmps91.github.io/cv/node_modules/vite/dist/node/chunks/node.js:19984:13
+    at readFromFileMap (file:///Users/f/proyects/react/fmps91.github.io/cv/node_modules/vite/dist/node/chunks/node.js:19797:13)
+    at exports.fromMapFileComment (file:///Users/f/proyects/react/fmps91.github.io/cv/node_modules/vite/dist/node/chunks/node.js:19891:12)
+    at exports.fromMapFileSource (file:///Users/f/proyects/react/fmps91.github.io/cv/node_modules/vite/dist/node/chunks/node.js:19902:22)
+    at extractSourcemapFromFile (file:///Users/f/proyects/react/fmps91.github.io/cv/node_modules/vite/dist/node/chunks/node.js:19976:87)
+    at loadAndTransform (file:///Users/f/proyects/react/fmps91.github.io/cv/node_modules/vite/dist/node/chunks/node.js:24143:22)
+
+
+
+----------------------------------------
+arregalo con esto:
+
+Step 1
+npm install jspdf html2canvas
+
+Step 2 — Clean up index.html
+Remove the two script tags at the bottom:
+html<!-- DELETE THESE TWO LINES -->
+<script src="/src/assets/librarys/html2canvas/html2canvas.min.js"></script>
+<script src="/src/assets/librarys/jsPDF/jspdf.umd.min.js"></script>
+
+Step 3
+import jsPDF from 'jspdf';
+import html2canvas from 'html2canvas';
+
+const handleClick = async (e) => {
+    e.preventDefault();
+
+    const canvas = await html2canvas(document.body);
+    const imgData = canvas.toDataURL('image/png');
+
+    const pdf = new jsPDF();                              // no more window.jspdf
+    const pdfWidth = pdf.internal.pageSize.getWidth();
+    const pdfHeight = pdf.internal.pageSize.getHeight();
+
+    const imgAspectRatio = canvas.width / canvas.height;
+    const pdfAspectRatio = pdfWidth / pdfHeight;
+
+    let imgWidth, imgHeight;
+    if (imgAspectRatio > pdfAspectRatio) {
+        imgWidth = pdfWidth;
+        imgHeight = pdfWidth / imgAspectRatio;
+    } else {
+        imgHeight = pdfHeight;
+        imgWidth = pdfHeight * imgAspectRatio;
+    }
+
+    pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
+    pdf.save('cv.pdf');
+};
+
+Step 4 — You can delete the local library files
+bash
+rm -rf src/assets/librarys/
+----------------------------------------
+
 
 #este es mejor opcion que el liveserver
 npm install -g http-server

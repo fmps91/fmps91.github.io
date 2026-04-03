@@ -2,8 +2,8 @@ import fs from 'fs';
 
 const dev = [
   '<!-- para desarrollo poner estas direcciónes de las librerias -->',
-  '<script src="/src/assets/librarys/html2canvas/html2canvas.min.js"></script>',
-  '<script src="/src/assets/librarys/jsPDF/jspdf.umd.min.js"></script>'
+  '<script src="src/assets/librarys/html2canvas/html2canvas.min.js"></script>',
+  '<script src="src/assets/librarys/jsPDF/jspdf.umd.min.js"></script>'
 ];
 
 const prod = [
