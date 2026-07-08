@@ -9,7 +9,7 @@ const MultiSelect = ({
   onSelectionChange 
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState('Español');
+  const [selectedOption, setSelectedOption] = useState('Inglés');
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);

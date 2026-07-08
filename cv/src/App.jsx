@@ -19,7 +19,7 @@ function App() {
   const [showCV, setShowCV] = useState(false);
   const [valueCheck, setValueCheck] = useState(false);
   const [leng, setLeng] = useState('es');
-  const [selectedLanguage, setSelectedLanguage] = useState('Español');
+  const [selectedLanguage, setSelectedLanguage] = useState('Inglés');
   const [label, setLabel] = useState('CV')
 
   // Opciones de lenguajes
