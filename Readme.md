@@ -5,7 +5,7 @@ Recurso estatico para realizar un cv sin dependecias instaladas en el package.js
 ## Aplicación
 
 imagen de representacion de la app:
-ScreenShot
+![ScreenShot](cv.png)
 
 ## Comandos
 
