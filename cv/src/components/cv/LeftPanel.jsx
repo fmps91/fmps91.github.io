@@ -1,7 +1,8 @@
 import './left.css'
 //import jsPDF from '../assets/librarys/jsPDF/jspdf.umd.min.js';
-export default function LeftPanel({ data }) {
+export default function LeftPanel({ data, type }) {
     
+    console.log("type: ",type)
       
     let pathImages = "images/";
     process.env.NODE_ENV === "production" ? pathImages="images/" : pathImages="../../src/assets/images/"
@@ -66,10 +67,7 @@ export default function LeftPanel({ data }) {
                         <h1 > {data.perfil.nombre} </h1>
                         <p className='pText ' style={{ marginTop: "10px" }}>{data.perfil.rol}</p>
                     </div>
-
-
                 }
-
             </div>
 
             <div id="redes" className='default'>
@@ -106,7 +104,7 @@ export default function LeftPanel({ data }) {
 
 
             <div id="educacion" className='default items'>
-                <p className='default pTitle'>EDUCACIÓN</p>
+                <p className='default pTitle'>{type["educación"]}</p>
                 {data.educación == null ?
                     <p>No hay redes disponibles</p>
                     :
@@ -135,7 +133,7 @@ export default function LeftPanel({ data }) {
             </div>
 
             <div id="lenguajes" className='default items' >
-                <p className='default pTitle'>LENGUAJES</p>
+                <p className='default pTitle'>{type["lenguajes"]}</p>
                 {data.idiomas == null ?
                     <p>No hay idiomas disponibles</p>
                     :
@@ -153,7 +151,7 @@ export default function LeftPanel({ data }) {
             </div>
 
             <div id="intereses" className='default items'>
-                <p className='default pTitle'>INTERESES</p>
+                <p className='default pTitle'>{type["intereses"]}</p>
                 {data.intereses == null ?
                     <h4>No hay intereses disponibles</h4>
                     :
@@ -171,12 +169,12 @@ export default function LeftPanel({ data }) {
             </div>
 
             <div id="cv" className='default items' style={{ paddingBottom: "1em" }}>
-                <p className='pTitle'>DESCARGAS</p>
+                <p className='pTitle'>{type["descargas"]}</p>
                 <div>
-                <a className='pText' href={`${pathImages}cv_es.pdf`} download>CV/Curriculun PDF</a>
+                <a className='pText' href={`${pathImages}cv_es.pdf`} download>CV PDF</a>
                 </div>
                 <div>
-                    <p className='pText' onClick={handleClick} >CV/Curriculun generando PDF por React</p>
+                    <p className='pText' onClick={handleClick} >CV React</p>
                 </div>
                 
             </div>

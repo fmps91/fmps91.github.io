@@ -7,4 +7,7 @@ export default defineConfig({
   build: {
     outDir: "page",
   },
+  server: {
+    port: 4001, // cambia al puerto que quieras
+  },
 })

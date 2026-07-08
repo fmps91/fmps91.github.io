@@ -1,0 +1,11 @@
+.checkbox-container{
+  margin-bottom: 1em;
+}
+
+#config > div:nth-child(2) > div > input{
+  font-size: 22px;
+}
+
+.checkbox-container > .label{
+  padding-left: 1em;
+}

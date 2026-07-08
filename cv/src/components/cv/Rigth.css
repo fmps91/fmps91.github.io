@@ -154,25 +154,8 @@
   }
 }
 
-@media (max-width: 410px) {
-  #containerActBen{
-    display:block;
-    margin-left: 30%;
-  }
-
-
-
-  #tecnologias{
-    margin-bottom: 1em;
-  }
-
-  #actividades{
-    margin-bottom: 1em;
-  }
- 
-}
-
 @media (max-width: 436px) {
+
   .section {
     margin-left: 4%;
   }

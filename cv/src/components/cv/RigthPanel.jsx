@@ -1,14 +1,15 @@
 
 import "./Rigth.css"
-import ProgressBar from '../hooks/ProgressBar';
+import ProgressBar from '../../hooks/ProgressBar';
 
-export default function RigthPanel({ data }) {
+export default function RigthPanel({ data, type  }) {
     /* console.log("data rigth: ", Object.keys(data))
     console.log("data rigth: ", data) */
+
     
     let pathImages = "images/";
     
-    process.env.NODE_ENV === "production" ? pathImages="images/" : pathImages="../../src/assets/images/"
+    process.env.NODE_ENV === "production" ? pathImages="../images/" : pathImages="../../src/assets/images/"
     
     const iconsSvg = ['user.png', 'experiences.png', 'projects.png', 'skills.png', 'courses.png']
     const stileIcon = { width: "20px", margin: "10px", paddingBottom: "1em" }
@@ -24,7 +25,8 @@ export default function RigthPanel({ data }) {
                         </img>
                     </div>
 
-                    <p className='pTitle '>{Object.keys(data)[0].toUpperCase()}</p>
+                    {/* <p className='pTitle '>{Object.keys(data)[0].toUpperCase()}</p> */}
+                    <p className='pTitle '>{type["perfil"]}</p>
 
                 </div>
                 {data.carrera == null ?
@@ -56,7 +58,7 @@ export default function RigthPanel({ data }) {
                         </img>
                     </div>
 
-                    <p className='pTitle '>{Object.keys(data)[1].toUpperCase()}</p>
+                    <p className='pTitle '>{type["experiencias"]}</p>
 
                 </div>
                 {data.experiencias == null ?
@@ -86,9 +88,9 @@ export default function RigthPanel({ data }) {
                                     <div id='containerActBen'>
 
                                         <div id='tecnologias'>
-                                            <p className='pText default'>{Object.keys(v)[3].toLocaleUpperCase()}</p>
+                                            <p className='pText default'>{v.herramientas["nombre"]}</p>
                                             <div className='lista'>
-                                                {v.herramientas.map((v1, e1) => {
+                                                {v.herramientas["lista"].map((v1, e1) => {
                                                     return (
                                                         <p key={e1} className='pText'>{v1}</p>
                                                     )
@@ -97,9 +99,9 @@ export default function RigthPanel({ data }) {
                                         </div>
 
                                         <div id='actividades'>
-                                            <p className='pText default'>{Object.keys(v)[4].toLocaleUpperCase()}</p>
+                                            <p className='pText default'>{v.actividades["nombre"]}</p>
                                             <ul className='lista'>
-                                                {v.actividades.map((v1, e1) => {
+                                                {v.actividades["lista"].map((v1, e1) => {
                                                     return (
                                                         <li key={e1} className='pText itemLista'>{v1}</li>
                                                     )
@@ -107,9 +109,9 @@ export default function RigthPanel({ data }) {
                                             </ul>
                                         </div>
                                         <div id='beneficios'>
-                                            <p className='pText default'>{Object.keys(v)[6].toLocaleUpperCase()}</p>
+                                            <p className='pText default'>{v.beneficios["nombre"]}</p>
                                             <ul className='lista'>
-                                                {v.beneficios.map((v1, e1) => {
+                                                {v.beneficios["lista"].map((v1, e1) => {
                                                     return (
                                                         <li key={e1} className='pText itemLista'>{v1}</li>
                                                     )
@@ -132,26 +134,26 @@ export default function RigthPanel({ data }) {
             </div>
 
 
-            <div id='projectos' className='section'>
+            <div id='proyectos' className='section'>
                 <div className='titulo'>
                     <div className='redondSvg' style={divIcon}>
                         <img src={`${pathImages + iconsSvg[2]}`} style={stileIcon} >
                         </img>
                     </div>
 
-                    <p className='pTitle '>{Object.keys(data)[2].toUpperCase()}</p>
+                    <p className='pTitle '>{type["proyectos"]}</p>
 
                 </div>
-                <p className='pText ' style={{marginBottom:"5px"}}>{data.projectos.descripción}</p>
-                {data.projectos.lista == null ?
-                    <h2>No hay projectos</h2>
+                <p className='pText ' style={{marginBottom:"5px"}}>{data.proyectos["descripción"]}</p>
+                {data.proyectos.lista == null ?
+                    <h2>No hay proyectos</h2>
                     :
                     <div className='wrapper'>
-                        {data.projectos.lista.map((v, e) => {
+                        {data.proyectos.lista.map((v, e) => {
                             return (
                                 <div className='card' key={e}>
                                     <p className='pCompany textDefaultRitgh'>{v.nombre}</p>
-                                    <p className='pText'>{v.descripción}</p>
+                                    <p className='pText'>{v["descripción"]}</p>
                                     <a href={v.link} style={stileA} className="pCompany" >link</a>
                                 </div>
                             );
@@ -163,14 +165,14 @@ export default function RigthPanel({ data }) {
             </div>
 
 
-            <div id='habilidadess' className='section'>
+            <div id='habilidades' className='section'>
                 <div className='titulo'>
                     <div className='redondSvg' style={divIcon}>
                         <img src={`${pathImages + iconsSvg[3]}`} style={stileIcon} >
                         </img>
                     </div>
 
-                    <p className='pTitle '>{Object.keys(data)[3].toUpperCase()}</p>
+                    <p className='pTitle '>{type["habilidades"]}</p>
 
                 </div>
                 {data.habilidades == null ?
@@ -194,14 +196,14 @@ export default function RigthPanel({ data }) {
             </div>
 
 
-            <div id='cursos' className='section' style={{ paddingBottom: "1em" }}>
+            <div id='cursos' className='section' style={{ paddingBottom: "0" }}>
                 <div className='titulo'>
                     <div className='redondSvg' style={divIcon}>
                         <img src={`${pathImages + iconsSvg[4]}`} style={{ width: "20px", marginLeft: "9px", marginTop: "6px" }} >
                         </img>
                     </div>
 
-                    <p className='pTitle '>{Object.keys(data)[4].toUpperCase()}</p>
+                    <p className='pTitle '>{type["cursos"]}</p>
 
                 </div>
 

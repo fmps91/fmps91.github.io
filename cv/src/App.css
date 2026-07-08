@@ -17,8 +17,6 @@ body{
 #container {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  
 }
 
 #left{
@@ -30,8 +28,6 @@ body{
   color: #ffff;
   width: 240px;
   text-decoration: none;
-  
-  
 }
 
 #rigth{
@@ -39,14 +35,12 @@ body{
 }
 
 #rigthHtml{
-
   width: 785px;
-  
 }
 
 
 #idfooter{
-  margin: auto;
+  margin: 0;
   padding: auto;
   display: flex;
   justify-content: center;
@@ -55,19 +49,14 @@ body{
   font-size: 18px;
   background: #566573;
   width: 1024px;
-
 }
 
 #footer{
-  
   display: block;
   text-align: center;
   color: #ffff;
-  
   font-weight: bold;
-
 }
-
 
 
 #footer > div >a{
@@ -89,16 +78,37 @@ body{
 }
 
 @media (max-width: 829px) {
+
    #container{
      display: block;
+     
    }
+
    #left{ 
     display: flex;
     justify-content: center;
+    margin: auto;
+    padding: auto;
     
   }
   #leftHtml{
     width: auto;
+    margin: auto;
+    padding: auto;
+  }
+
+  #rigthHtml{
+    margin: auto;
+    padding: auto;
+  }
+
+  #rigth{
+    margin: auto;
+    padding: auto;
+  }
+  
+  #idfooter{
+    margin-top: -32px;
   }
 
   #cv > div> a{
@@ -113,6 +123,12 @@ body{
 }
 
 
+@media (max-width: 400px) {
+#config{
+  padding-left: clamp(0.5rem, 3vw, 2rem);    
+}
+
+}
 
 
 

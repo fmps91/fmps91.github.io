@@ -1,59 +1,43 @@
-[
-    {
-        "es": {
-            "left": {
-                "perfil de carrera": {
-                    "nombre": "",
-                    "descripción": ""
-                },
-                "experiencias": [
-                    {
-                        "nombre": "",
-                        "descripción": "",
-                        "duración": ""
-                    }
-                ],
-                "projectos": {
-                    "descripción": "",
-                    "lista": [
-                        {
-                            "nombre": "",
-                            "descripción": ""
-                        }
-                    ]
-                }
-            },
-            "rigth": {
-
-            }
-        }
+{
+    "es": {
+        "perfil": "PERFIL",
+        "redes": "REDES",
+        "educación": "EDUCACIÓN",
+        "idiomas": "IDIOMAS",
+        "intereses": "INTERESES",
+        "carrera": "CARRERA",
+        "experiencias": "EXPERIENCIAS",
+        "proyectos": "PROYECTOS",
+        "habilidades": "HABILIDADES",
+        "cursos": "CURSOS",
+        "lenguajes":"LENGUAJES",
+        "descargas":"DESCARGAS"
     },
-    {
-        "en": {
-            "left":{
-            "career profile": {
-                "description": ""
-            },
-            "experiences": [
-                {
-                    "name": "",
-                    "description": "",
-                    "duration": ""
-                }
-            ],
-            "projects": {
-                "description": "",
-                "list": [
-                    {
-                        "name": "",
-                        "description": ""
-                    }
-                ]
-            }
-            },
-            "rigth": {
-
-            }
-        }
+    "en": {
+        "perfil": "PROFILE",
+        "redes": "NETWORKS",
+        "educación": "EDUCATION",
+        "idiomas": "LANGUAGES",
+        "intereses": "INTERESTS",
+        "carrera": "CAREER",
+        "experiencias": "EXPERIENCE",
+        "proyectos": "PROJECTS",
+        "habilidades": "SKILLS",
+        "cursos": "COURSES",
+        "lenguajes":"LANGUAGES",
+        "descargas":"DOWNLOADS"
+    },
+    "el": {
+        "perfil": "",
+        "redes": "",
+        "educación": "",
+        "idiomas": "",
+        "intereses": "",
+        "carrera": "",
+        "experiencias": "",
+        "proyectos": "",
+        "habilidades": "",
+        "cursos": ""
     }
-]
+
+}

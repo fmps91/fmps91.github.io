@@ -1,0 +1,616 @@
+{
+    "ats": {
+        "es": {
+            "perfil": {
+                "nombre": "Miguel Parra",
+                "rol": "Full Stack Developer"
+            },
+            "redes": {
+                "correo": "fmps92@gmail.com",
+                "github": "https://github.com/fmps91",
+                "linkeding": "https://www.linkedin.com/in/miguel-sarmiento-0755b5202/"
+            },
+            "educación": [
+                {
+                    "titulo": "Magister Universitario en Desarrollo y Operaciones (Devops)",
+                    "instituto": "Universidad Internacional de la Rioja",
+                    "duración": "2022 – 2023"
+                },
+                {
+                    "titulo": "Ingeniero en Sistemas Informáticos y Computación",
+                    "instituto": "Universidad Técnica Particular de Loja",
+                    "duración": "2010 – 2022"
+                }
+            ],
+            "idiomas": [
+                "Ingles (Basico)",
+                "Español (Nativo)"
+            ],
+            "intereses": [
+                "Escuchar musica",
+                "Arte digital",
+                "Lectura"
+            ],
+            "carrera": {
+                "descripción": "Desarrollador Fullstack con experiencia en la creación de aplicaciones web y servidores desde el frontend hasta el backend. Enfocado en construir soluciones escalables, optimizadas y de alto rendimiento. Comprometido con el trabajo en equipo, la calidad del código y la mejora continua.",
+                "tecnologías": [
+                    "React.js",
+                    "Jest",
+                    "Cypress",
+                    "K6",
+                    "Express",
+                    "Mongoose",
+                    "Postgresql",
+                    "Mongodb",
+                    "Python",
+                    "Javascript",
+                    "Slack",
+                    "Trello",
+                    "Ansible",
+                    "Docker",
+                    "Kubernetes",
+                    "Terraform",
+                    "Github",
+                    "Githubactions",
+                    "EC2",
+                    "Amazon Api Gateway",
+                    "S3"
+                ]
+            },
+            "experiencias": [
+                {
+                    "rol": "Devops, Developer, QA",
+                    "nombre": "Saluto C.L.",
+                    "descripción": "Desarrollo de un Marco de Desarrollo Agíl CI/CD para la empresa Saluto C.L.",
+                    "herramientas": [
+                        "Express",
+                        "Postgresql",
+                        "Github",
+                        "Githubactions",
+                        "Slack",
+                        "Trello",
+                        "Ansible",
+                        "EC2"
+                    ],
+                    "actividades": [
+                        "Construcción de continuos integration para despliegue de aplicaciones de entornos productivos",
+                        "Construcción de continuos deployment para despliegue",
+                        "Desarrollo de pruebas para los workflows para pruebas de ejecución de código"
+                    ],
+                    "duración": "Febrero del 2023 – Agosto del 2023",
+                    "beneficios": [
+                        "Mejoras de procesos y monitoreo en un 53.3%",
+                        "Velocidad de entrega del software en 60%",
+                        "Satisfación de la metodología en 66.7%"
+                    ]
+                }
+            ],
+            "proyectos": {
+                "descripción": "Algunos proyectos que realice en mi tiempo libre:",
+                "lista": [
+                    {
+                        "nombre": "Twitter Clone",
+                        "descripción": "Es un clone de twitter con herramientas: react.js, express, cloudinary, jest, cypress, k6.",
+                        "link": "https://github.com/fmps91/twitterclone"
+                    },
+                    {
+                        "nombre": "Netflix Clone",
+                        "descripción": "Es un clon de netlix con herramientas: react, express, firebase, cypress, themoviedb",
+                        "link": "https://github.com/fmps91/netflix_clone"
+                    },
+                    {
+                        "nombre": "CV page",
+                        "descripción": "Es la creación de un curriculun en un repositorio de github herramientas: react.js, vite, githubpages, githubactions.",
+                        "link": "https://github.com/fmps91/fmps91.github.io"
+                    },
+                    {
+                        "nombre": "Ecommerce_nests_react",
+                        "descripción": "Es la creación de un ecommerce con nestjs y react",
+                        "link": "https://github.com/fmps91/ecommerce_nests_react"
+                    }
+                ]
+            },
+            "habilidades": [
+                {
+                    "nombre": "Developer",
+                    "porcentaje": 90
+                },
+                {
+                    "nombre": "UX y UI",
+                    "porcentaje": 82
+                },
+                {
+                    "nombre": "Arquitecturas en microservicios",
+                    "porcentaje": 93
+                },
+                {
+                    "nombre": "Actualización y migración en las herramientas",
+                    "porcentaje": 80
+                },
+                {
+                    "nombre": "Procesos automatizados",
+                    "porcentaje": 90
+                }
+            ],
+            "cursos": [
+                {
+                    "titulo": "Certificado de curso de preparación de AWS Cloud Practitioner de la Unir",
+                    "dir": "aws.png"
+                },
+                {
+                    "titulo": "Certificado de curso de preparación de AZ900 Microsoft Azure Fundamentals de la Unir",
+                    "dir": "azure.png"
+                },
+                {
+                    "titulo": "CertiProf Scrum Foundation",
+                    "dir": "scrum.png"
+                }
+            ]
+        },
+        "en": {
+            "perfil": {
+                "nombre": "Miguel Parra",
+                "rol": "Full Stack Developer"
+            },
+            "redes": {
+                "correo": "fmps92@gmail.com",
+                "github": "https://github.com/fmps91",
+                "linkeding": "https://www.linkedin.com/in/miguel-sarmiento-0755b5202/"
+            },
+            "educación": [
+                {
+                    "titulo": "Master's Degree in Development and Operations (DevOps)",
+                    "instituto": "International University of La Rioja",
+                    "duración": "2022 – 2023"
+                },
+                {
+                    "titulo": "Computer Systems and Computing Engineer",
+                    "instituto": "Technical Particular University of Loja",
+                    "duración": "2010 – 2022"
+                }
+            ],
+            "idiomas": [
+                "English (Basic)",
+                "Spanish (Native)"
+            ],
+            "intereses": [
+                "Listening to music",
+                "Digital art",
+                "Reading"
+            ],
+            "carrera": {
+                "descripción": "Fullstack Developer with experience in building web applications and servers from frontend to backend. Focused on building scalable, optimized, and high-performance solutions. Committed to teamwork, code quality, and continuous improvement.",
+                "tecnologías": [
+                    "React.js",
+                    "Jest",
+                    "Cypress",
+                    "K6",
+                    "Express",
+                    "Mongoose",
+                    "Postgresql",
+                    "Mongodb",
+                    "Python",
+                    "Javascript",
+                    "Slack",
+                    "Trello",
+                    "Ansible",
+                    "Docker",
+                    "Kubernetes",
+                    "Terraform",
+                    "Github",
+                    "Githubactions",
+                    "EC2",
+                    "Amazon Api Gateway",
+                    "S3"
+                ]
+            },
+            "experiencias": [
+                {
+                    "rol": "Devops, Developer, QA",
+                    "nombre": "Saluto C.L.",
+                    "descripción": "Development of an Agile CI/CD Framework for Saluto C.L.",
+                    "herramientas": [
+                        "Express",
+                        "Postgresql",
+                        "Github",
+                        "Githubactions",
+                        "Slack",
+                        "Trello",
+                        "Ansible",
+                        "EC2"
+                    ],
+                    "actividades": [
+                        "Building continuous integration for deploying applications to production environments",
+                        "Building continuous deployment for deployment",
+                        "Development of tests for workflows to test code execution"
+                    ],
+                    "duración": "February 2023 – August 2023",
+                    "beneficios": [
+                        "Improved processes and monitoring by 53.3%",
+                        "Increased software delivery speed by 60%",
+                        "Methodology satisfaction rate of 66.7%"
+                    ]
+                }
+            ],
+            "proyectos": {
+                "descripción": "Some projects I worked on in my free time:",
+                "lista": [
+                    {
+                        "nombre": "Twitter Clone",
+                        "descripción": "A Twitter clone using tools: react.js, express, cloudinary, jest, cypress, k6.",
+                        "link": "https://github.com/fmps91/twitterclone"
+                    },
+                    {
+                        "nombre": "Netflix Clone",
+                        "descripción": "A Netflix clone using tools: react, express, firebase, cypress, themoviedb",
+                        "link": "https://github.com/fmps91/netflix_clone"
+                    },
+                    {
+                        "nombre": "CV Page",
+                        "descripción": "Creation of a curriculum in a github repository using tools: react.js, vite, githubpages, githubactions.",
+                        "link": "https://github.com/fmps91/fmps91.github.io"
+                    },
+                    {
+                        "nombre": "Ecommerce_nests_react",
+                        "descripción": "Creation of an e-commerce with nestjs and react",
+                        "link": "https://github.com/fmps91/ecommerce_nests_react"
+                    }
+                ]
+            },
+            "habilidades": [
+                {
+                    "nombre": "Developer",
+                    "porcentaje": 90
+                },
+                {
+                    "nombre": "UX and UI",
+                    "porcentaje": 82
+                },
+                {
+                    "nombre": "Microservices Architecture",
+                    "porcentaje": 93
+                },
+                {
+                    "nombre": "Tool Updates and Migration",
+                    "porcentaje": 80
+                },
+                {
+                    "nombre": "Automated Processes",
+                    "porcentaje": 90
+                }
+            ],
+            "cursos": [
+                {
+                    "titulo": "AWS Cloud Practitioner Preparation Course Certificate from Unir",
+                    "dir": "aws.png"
+                },
+                {
+                    "titulo": "AZ900 Microsoft Azure Fundamentals Preparation Course Certificate from Unir",
+                    "dir": "azure.png"
+                },
+                {
+                    "titulo": "CertiProf Scrum Foundation",
+                    "dir": "scrum.png"
+                }
+            ]
+        }
+    },
+    "cv": {
+        "es": {
+            "left": {
+                "perfil": {
+                    "foto": "photo.jpeg",
+                    "nombre": "Miguel Parra",
+                    "rol": "Full Stack Developer"
+                },
+                "redes": {
+                    "correo": "fmps92@gmail.com",
+                    "github": "https://github.com/fmps91",
+                    "linkeding": "https://www.linkedin.com/in/miguel-sarmiento-0755b5202/"
+                },
+                "educación": [
+                    {
+                        "titulo": "Magister Universitario en Desarrollo y Operaciones (Devops)",
+                        "instituto": "Universidad Internacional de la Rioja",
+                        "duración": "2022 – 2023"
+                    },
+                    {
+                        "titulo": "Ingeniero en Sistemas Informáticos y Computación",
+                        "instituto": "Universidad Técnica Particular de Loja",
+                        "duración": "2010 – 2022"
+                    }
+                ],
+                "idiomas": [
+                    "Ingles (Basico)",
+                    "Español (Nativo)"
+                ],
+                "intereses": [
+                    "Escuchar musica",
+                    "Arte digital",
+                    "Lectura"
+                ]
+            },
+            "rigth": {
+                "carrera": {
+                    "descripción": "Desarrollador Fullstack con experiencia en la creación de aplicaciones web y servidores desde el frontend hasta el backend. Enfocado en construir soluciones escalables, optimizadas y de alto rendimiento. Comprometido con el trabajo en equipo, la calidad del código y la mejora continua.",
+                    "tecnologías": [
+                        "React.js",
+                        "Jest",
+                        "Cypress",
+                        "K6",
+                        "Express",
+                        "Mongoose",
+                        "Postgresql",
+                        "Mongodb",
+                        "Python",
+                        "Javascript",
+                        "Slack",
+                        "Trello",
+                        "Ansible",
+                        "Docker",
+                        "Kubernetes",
+                        "Terraform",
+                        "Github",
+                        "Githubactions",
+                        "EC2",
+                        "Amazon Api Gateway",
+                        "S3"
+                    ]
+                },
+                "experiencias": [
+                    {
+                        "rol": "Devops, Developer, QA",
+                        "nombre": "Saluto C.L.",
+                        "descripción": "Desarrollo de un Marco de Desarrollo Agíl CI/CD para la empresa Saluto C.L.",
+                        "herramientas": {
+                            "nombre":"herramientas",
+                            "lista":[
+                            "Express",
+                            "Postgresql",
+                            "Github",
+                            "Githubactions",
+                            "Slack",
+                            "Trello",
+                            "Ansible",
+                            "EC2"
+                        ]},
+                        "actividades":  {
+                            "nombre":"actividades",
+                            "lista":[
+                            "Construcción de continuos integration para despliegue de aplicaciones de entornos productivos",
+                            "Construcción de continuos deployment para despliegue",
+                            "Desarrollo de pruebas para los workflows para pruebas de ejecución de código"
+                        ]},
+                        "duración": "Febrero del 2023 – Agosto del 2023",
+                        "beneficios":  {
+                            "nombre":"beneficios",
+                            "lista":[
+                            "Mejoras de procesos y monitoreo en un 53.3%",
+                            "Velocidad de entrega del software en 60%",
+                            "Satisfación de la metodología en 66.7%"
+                        ]}
+                    }
+                ],
+                "proyectos": {
+                    "descripción": "Algunos proyectos que realice en mi tiempo libre:",
+                    "lista": [
+                        {
+                            "nombre": "Twitter Clone",
+                            "descripción": "Es un clone de twitter con herramientas: react.js, express, cloudinary, jest, cypress, k6.",
+                            "link": "https://github.com/fmps91/twitterclone"
+                        },
+                        {
+                            "nombre": "Netflix Clone",
+                            "descripción": "Es un clon de netlix con herramientas: react, express, firebase, cypress, themoviedb",
+                            "link": "https://github.com/fmps91/netflix_clone"
+                        },
+                        {
+                            "nombre": "CV page",
+                            "descripción": "Es la creación de un curriculun en un repositorio de github herramientas: react.js, vite, githubpages, githubactions.",
+                            "link": "https://github.com/fmps91/fmps91.github.io"
+                        },
+                        {
+                            "nombre": "Ecommerce_nests_react",
+                            "descripción": "Es la creación de un ecommerce con nestjs y react",
+                            "link": "https://github.com/fmps91/ecommerce_nests_react"
+                        }
+                    ]
+                },
+                "habilidades": [
+                    {
+                        "nombre": "Developer",
+                        "porcentaje": 90
+                    },
+                    {
+                        "nombre": "UX y UI",
+                        "porcentaje": 82
+                    },
+                    {
+                        "nombre": "Arquitecturas en microservicios",
+                        "porcentaje": 93
+                    },
+                    {
+                        "nombre": "Actualización y migración en las herramientas",
+                        "porcentaje": 80
+                    },
+                    {
+                        "nombre": "Procesos automatizados",
+                        "porcentaje": 90
+                    }
+                ],
+                "cursos": [
+                    {
+                        "titulo": "Certificado de curso de preparación de AWS Cloud Practitioner de la Unir",
+                        "dir": "aws.png"
+                    },
+                    {
+                        "titulo": "Certificado de curso de preparación de AZ900 Microsoft Azure Fundamentals de la Unir",
+                        "dir": "azure.png"
+                    },
+                    {
+                        "titulo": "CertiProf Scrum Foundation",
+                        "dir": "scrum.png"
+                    }
+                ]
+            }
+        },
+        "en": {
+            "left": {
+                "perfil": {
+                    "foto": "photo.jpeg",
+                    "nombre": "Miguel Parra",
+                    "rol": "Full Stack Developer"
+                },
+                "redes": {
+                    "correo": "fmps92@gmail.com",
+                    "github": "https://github.com/fmps91",
+                    "linkeding": "https://www.linkedin.com/in/miguel-sarmiento-0755b5202/"
+                },
+                "educación": [
+                    {
+                        "titulo": "Master's Degree in Development and Operations (DevOps)",
+                        "instituto": "International University of La Rioja",
+                        "duración": "2022 – 2023"
+                    },
+                    {
+                        "titulo": "Computer Systems and Computing Engineer",
+                        "instituto": "Technical Particular University of Loja",
+                        "duración": "2010 – 2022"
+                    }
+                ],
+                "idiomas": [
+                    "English (Basic)",
+                    "Spanish (Native)"
+                ],
+                "intereses": [
+                    "Listening to music",
+                    "Digital art",
+                    "Reading"
+                ]
+            },
+            "rigth": {
+                "carrera": {
+                    "descripción": "Fullstack Developer with experience in building web applications and servers from frontend to backend. Focused on building scalable, optimized, and high-performance solutions. Committed to teamwork, code quality, and continuous improvement.",
+                    "tecnologías": [
+                        "React.js",
+                        "Jest",
+                        "Cypress",
+                        "K6",
+                        "Express",
+                        "Mongoose",
+                        "Postgresql",
+                        "Mongodb",
+                        "Python",
+                        "Javascript",
+                        "Slack",
+                        "Trello",
+                        "Ansible",
+                        "Docker",
+                        "Kubernetes",
+                        "Terraform",
+                        "Github",
+                        "Githubactions",
+                        "EC2",
+                        "Amazon Api Gateway",
+                        "S3"
+                    ]
+                },
+                "experiencias": [
+                    {
+                        "rol": "Devops, Developer, QA",
+                        "nombre": "Saluto C.L.",
+                        "descripción": "Development of an Agile CI/CD Framework for Saluto C.L.",
+                        "herramientas":  {
+                            "nombre":"tools",
+                            "lista":[
+                            "Express",
+                            "Postgresql",
+                            "Github",
+                            "Githubactions",
+                            "Slack",
+                            "Trello",
+                            "Ansible",
+                            "EC2"
+                        ]},
+                        "actividades":  {
+                            "nombre":"activities",
+                            "lista":[
+                            "Building continuous integration for deploying applications to production environments",
+                            "Building continuous deployment for deployment",
+                            "Development of tests for workflows to test code execution"
+                        ]},
+                        "duración": "February 2023 – August 2023",
+                        "beneficios":  {
+                            "nombre":"benefits",
+                            "lista":[
+                            "Improved processes and monitoring by 53.3%",
+                            "Increased software delivery speed by 60%",
+                            "Methodology satisfaction rate of 66.7%"
+                        ]}
+                    }
+                ],
+                "proyectos": {
+                    "descripción": "Some projects I worked on in my free time:",
+                    "lista": [
+                        {
+                            "nombre": "Twitter Clone",
+                            "descripción": "A Twitter clone using tools: react.js, express, cloudinary, jest, cypress, k6.",
+                            "link": "https://github.com/fmps91/twitterclone"
+                        },
+                        {
+                            "nombre": "Netflix Clone",
+                            "descripción": "A Netflix clone using tools: react, express, firebase, cypress, themoviedb",
+                            "link": "https://github.com/fmps91/netflix_clone"
+                        },
+                        {
+                            "nombre": "CV Page",
+                            "descripción": "Creation of a curriculum in a github repository using tools: react.js, vite, githubpages, githubactions.",
+                            "link": "https://github.com/fmps91/fmps91.github.io"
+                        },
+                        {
+                            "nombre": "Ecommerce_nests_react",
+                            "descripción": "Creation of an e-commerce with nestjs and react",
+                            "link": "https://github.com/fmps91/ecommerce_nests_react"
+                        }
+                    ]
+                },
+                "habilidades": [
+                    {
+                        "nombre": "Developer",
+                        "porcentaje": 90
+                    },
+                    {
+                        "nombre": "UX and UI",
+                        "porcentaje": 82
+                    },
+                    {
+                        "nombre": "Microservices Architecture",
+                        "porcentaje": 93
+                    },
+                    {
+                        "nombre": "Tool Updates and Migration",
+                        "porcentaje": 80
+                    },
+                    {
+                        "nombre": "Automated Processes",
+                        "porcentaje": 90
+                    }
+                ],
+                "cursos": [
+                    {
+                        "titulo": "AWS Cloud Practitioner Preparation Course Certificate from Unir",
+                        "dir": "aws.png"
+                    },
+                    {
+                        "titulo": "AZ900 Microsoft Azure Fundamentals Preparation Course Certificate from Unir",
+                        "dir": "azure.png"
+                    },
+                    {
+                        "titulo": "CertiProf Scrum Foundation",
+                        "dir": "scrum.png"
+                    }
+                ]
+            }
+        }
+    }
+}
