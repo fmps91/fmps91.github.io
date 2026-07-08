@@ -32,13 +32,13 @@ export default function RigthPanel({ data, type  }) {
                 {data.carrera == null ?
                     <h2>No hay perfil disponible</h2>
                     :
-                    <p style={{ marginBottom: "5px" }} className='pText ' >{data.carrera.descripción}</p>
+                    <p style={{ marginBottom: "5px" }} className='pText ' >{data.carrera['descripción']}</p>
                 }
                 {data.carrera == null ?
                     <h2>No hay tecnologías</h2>
                     :
                     <div id='tecCarrera'>
-                        {data.carrera.tecnologías.map((v, e) => {
+                        {data.carrera['tecnologías'].map((v, e) => {
                             return (
 
                                 <p key={e} className='tecP pText'>{v}</p>
