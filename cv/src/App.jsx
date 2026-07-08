@@ -18,7 +18,7 @@ function App() {
   const [showATS, setShowATS] = useState(true);
   const [showCV, setShowCV] = useState(false);
   const [valueCheck, setValueCheck] = useState(false);
-  const [leng, setLeng] = useState('es');
+  const [leng, setLeng] = useState('en');
   const [selectedLanguage, setSelectedLanguage] = useState('Inglés');
   const [label, setLabel] = useState('CV')
 
