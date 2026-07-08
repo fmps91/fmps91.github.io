@@ -15,8 +15,8 @@ import MultiSelect from './components/selectLanguage/MultiSelect';
 function App() {
 
   const [showConfig, setShowConfig] = useState(false);
-  const [showATS, setShowATS] = useState(false);
-  const [showCV, setShowCV] = useState(true);
+  const [showATS, setShowATS] = useState(true);
+  const [showCV, setShowCV] = useState(false);
   const [valueCheck, setValueCheck] = useState(false);
   const [leng, setLeng] = useState('es');
   const [selectedLanguage, setSelectedLanguage] = useState('Español');
