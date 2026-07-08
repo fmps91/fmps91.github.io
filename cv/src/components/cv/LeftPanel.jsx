@@ -1,8 +1,8 @@
 import './left.css'
 //import jsPDF from '../assets/librarys/jsPDF/jspdf.umd.min.js';
-export default function LeftPanel({ data, type }) {
+export default function LeftPanel({ data, type, leng }) {
     
-    console.log("type: ",type)
+    console.log("leng: ",leng)
       
     let pathImages = "images/";
     process.env.NODE_ENV === "production" ? pathImages="images/" : pathImages="../../src/assets/images/"
@@ -171,7 +171,7 @@ export default function LeftPanel({ data, type }) {
             <div id="cv" className='default items' style={{ paddingBottom: "1em" }}>
                 <p className='pTitle'>{type["descargas"]}</p>
                 <div>
-                <a className='pText' href={`${pathImages}cv_es.pdf`} download>CV PDF</a>
+                <a className='pText' href={`${pathImages}cv_${leng}.pdf`} download>CV PDF</a>
                 </div>
                 <div>
                     <p className='pText' onClick={handleClick} >CV React</p>

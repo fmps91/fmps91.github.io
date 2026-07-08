@@ -19,21 +19,13 @@ function App() {
   const [showCV, setShowCV] = useState(true);
   const [valueCheck, setValueCheck] = useState(false);
   const [leng, setLeng] = useState('es');
-  const [selectedLanguage, setSelectedLanguage] = useState('Inglés');
+  const [selectedLanguage, setSelectedLanguage] = useState('Español');
   const [label, setLabel] = useState('CV')
 
   // Opciones de lenguajes
   const languageOptions = [
     'Español',
-    'Inglés',
-    'Francés',
-    'Alemán',
-    'Italiano',
-    'Portugués',
-    'Ruso',
-    'Chino Mandarín',
-    'Japonés',
-    'Coreano'
+    'Inglés'
   ];
 
   // Manejadores para checkbox
@@ -122,7 +114,7 @@ function App() {
           <div id="container">
 
             <div id='left'>
-              <LeftPanel data={allJson.cv[''+leng]['left']} type={allLeng[''+leng]}></LeftPanel>
+              <LeftPanel data={allJson.cv[''+leng]['left']} type={allLeng[''+leng]} leng={leng}></LeftPanel>
             </div>
 
             <div id='rigth'>
