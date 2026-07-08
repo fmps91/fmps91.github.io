@@ -1,14 +1,16 @@
 # Indice
+
 Recurso estatico para realizar un cv sin dependecias instaladas en el package.json
 
 ## Aplicación
+
 imagen de representacion de la app:
-![ScreenShot](cv.png)
+ScreenShot
 
 ## Comandos
-* npm run dev: para ejecutar la aplicación en modo desarrollo
-* npm run build: para construir la aplicación en modo producción
 
+- npm run dev: para ejecutar la aplicación en modo desarrollo
+- npm run build: para construir la aplicación en modo producción
 
 ### Desarrollo
 
@@ -25,6 +27,8 @@ se agregen al index.html para que funcione la app en desarrollo
 
 ```
 
+
+
 ### Producción
 
 ```
@@ -39,3 +43,10 @@ const prod = [
 se agregen al index.html para que funcione la app en producción
 ```
 
+
+
+### Video
+
+demo de uso de CV
+
+[Watch the video on YouTube](https://www.youtube.com/watch?v=v5_gz_25gC0)
