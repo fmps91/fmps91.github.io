@@ -344,3 +344,6 @@ Parámetros útiles:
 readme--------
 permite visualizar el readme
 control + shift + v
+
+para abrir del Diagrama.drawio
+descargar la aplicacion drawio de internet o abrir en el navegador
